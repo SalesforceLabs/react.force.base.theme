@@ -1,8 +1,8 @@
 {
   "name": "design-system-react-native",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "",
-  "main": "index.js",
+  "main": "SLDS/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
