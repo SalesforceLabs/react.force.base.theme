@@ -1,6 +1,6 @@
 {
   "name": "design-system-react-native",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,13 +17,11 @@
   },
   "rnpm": {
     "assets": [
-      "Fonts",
-      "Resources",
-      "Images"
+      "Fonts"
     ]
   },
   "homepage": "https://github.com/madpotato/design-system-react-native#readme",
-  "dependencies": {
-    "rnpm": "^1.6.2"
+  "peerDependencies": {
+    "react-native": "^0.23.1"
   }
 }
