@@ -7,30 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05E4E6F01CBDF7BE00899BCA /* DesignSystemReactNative.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05E4E6EF1CBDF7BE00899BCA /* DesignSystemReactNative.h */; };
-		05E4E6F21CBDF7BE00899BCA /* DesignSystemReactNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E4E6F11CBDF7BE00899BCA /* DesignSystemReactNative.m */; };
 		05E4E73D1CBEBC6F00899BCA /* SLDSIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E4E73C1CBEBC6F00899BCA /* SLDSIcon.m */; };
-		05E4E73E1CBEBCF000899BCA /* SLDSIcon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05E4E73B1CBEBC6F00899BCA /* SLDSIcon.h */; };
+		05E4E75A1CBEBFCE00899BCA /* SLDSIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E4E73B1CBEBC6F00899BCA /* SLDSIcon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05E4E75B1CBEBFED00899BCA /* DesignSystemReactNative.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E4E6EF1CBDF7BE00899BCA /* DesignSystemReactNative.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		05E4E6EA1CBDF7BE00899BCA /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				05E4E73E1CBEBCF000899BCA /* SLDSIcon.h in CopyFiles */,
-				05E4E6F01CBDF7BE00899BCA /* DesignSystemReactNative.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		05E4E6EC1CBDF7BE00899BCA /* libDesignSystemReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDesignSystemReactNative.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E4E6EF1CBDF7BE00899BCA /* DesignSystemReactNative.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignSystemReactNative.h; sourceTree = "<group>"; };
-		05E4E6F11CBDF7BE00899BCA /* DesignSystemReactNative.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignSystemReactNative.m; sourceTree = "<group>"; };
 		05E4E73B1CBEBC6F00899BCA /* SLDSIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDSIcon.h; sourceTree = "<group>"; };
 		05E4E73C1CBEBC6F00899BCA /* SLDSIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDSIcon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				05E4E6EF1CBDF7BE00899BCA /* DesignSystemReactNative.h */,
-				05E4E6F11CBDF7BE00899BCA /* DesignSystemReactNative.m */,
 				05E4E73B1CBEBC6F00899BCA /* SLDSIcon.h */,
 				05E4E73C1CBEBC6F00899BCA /* SLDSIcon.m */,
 			);
@@ -75,6 +58,18 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		05E4E7591CBEBFA600899BCA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05E4E75A1CBEBFCE00899BCA /* SLDSIcon.h in Headers */,
+				05E4E75B1CBEBFED00899BCA /* DesignSystemReactNative.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		05E4E6EB1CBDF7BE00899BCA /* DesignSystemReactNative */ = {
 			isa = PBXNativeTarget;
@@ -82,7 +77,7 @@
 			buildPhases = (
 				05E4E6E81CBDF7BE00899BCA /* Sources */,
 				05E4E6E91CBDF7BE00899BCA /* Frameworks */,
-				05E4E6EA1CBDF7BE00899BCA /* CopyFiles */,
+				05E4E7591CBEBFA600899BCA /* Headers */,
 			);
 			buildRules = (
 			);
@@ -130,7 +125,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				05E4E73D1CBEBC6F00899BCA /* SLDSIcon.m in Sources */,
-				05E4E6F21CBDF7BE00899BCA /* DesignSystemReactNative.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
