@@ -1,9 +1,10 @@
 {
   "name": "design-system-react-native",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "rnpm link design-system-react-native",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,7 +17,14 @@
     "url": "https://github.com/madpotato/design-system-react-native/issues"
   },
   "rnpm": {
-    "assets": ["Fonts","Resources","Images"]
+    "assets": [
+      "Fonts",
+      "Resources",
+      "Images"
+    ]
   },
-  "homepage": "https://github.com/madpotato/design-system-react-native#readme"
+  "homepage": "https://github.com/madpotato/design-system-react-native#readme",
+  "devDependencies": {
+    "rnpm": "^1.6.2"
+  }
 }
