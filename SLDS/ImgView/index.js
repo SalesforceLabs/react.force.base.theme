@@ -1,10 +1,9 @@
 'use strict';
 
 const React = require('react-native');
-const styles = require('./styles');
-const Text = require('../../Text');
-const ImgView = require('../../ImgView');
+const Text = require('../Text');
 const View = React.View;
+
 
 module.exports = React.createClass({
   getDefaultProps () {
