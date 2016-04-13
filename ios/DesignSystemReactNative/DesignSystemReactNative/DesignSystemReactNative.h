@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface DesignSystemReactNative : NSObject
-
++(NSString *)getName;
 @end

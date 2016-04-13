@@ -9,5 +9,7 @@
 #import "DesignSystemReactNative.h"
 
 @implementation DesignSystemReactNative
-
++(NSString *)getName{
+    return @"!!! Name !!!";
+}
 @end
