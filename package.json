@@ -1,10 +1,10 @@
 {
   "name": "design-system-react-native",
-  "version": "0.0.12",
+  "version": "0.0.14",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "rnpm link design-system-react-native",
+    "ppostinstall": "rnpm link design-system-react-native",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
