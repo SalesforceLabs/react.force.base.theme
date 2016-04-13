@@ -6,5 +6,6 @@ module.exports = {
   InputReadonly: require('./InputReadonly'),
   Icons: require('./Icons'),
   Buttons: require('./Buttons'),
-  Text: require('./Text')
+  Text: require('./Text'),
+  IconUtility: require('./IconUtility')
 };
