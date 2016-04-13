@@ -5,9 +5,12 @@ const React = require('react-native');
 const {
   StyleSheet,
   Text,
+  View
 } = React;
 
 const iconCodes = require('./iconCodes');
+
+const FONT_NAME = 'SalesforceDesignSystemIconsUtility';
 
 const getCodeByName = (iconName) => {
   const name = iconName.toLowerCase();
@@ -17,21 +20,24 @@ const getCodeByName = (iconName) => {
 
 const getDefaultStyle = () => {
   return {
-    fontFamily: 'SalesforceDesignSystemIconsUtility',
-  }
+    fontFamily: FONT_NAME
+  };
 };
 
 module.exports = React.createClass({
   getDefaultProps (){
     return {
+      name:'like',
       style: {}
     }
   },
   render () {
     return (
-      <Text {...this.props} style={[this.props.style, getDefaultStyle()]}>
-        {getCodeByName('like')}
-      </Text>
+      <View {...this.props}>
+        <Text style={getDefaultStyle()}>
+          {getCodeByName(this.props.name)}
+        </Text>
+      </View>
     );
   }
 });
