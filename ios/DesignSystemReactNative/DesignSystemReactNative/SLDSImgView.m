@@ -13,7 +13,7 @@
     UILabel *label;
     int iconCategory;
     int iconName;
-//    UIImageView *imgView;
+    UIImageView *imgView;
 }
 
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher
@@ -30,18 +30,14 @@
     [super removeFromSuperview];
 }
 
-
 - (void)layoutSubviews
 {
-    if(label){
-        [label removeFromSuperview];
-    }
-    label = [UILabel init];
-    label.text = @"OK!";
-    
-//    UIImage *icon = [self getIcon];
-//    imgView = [[UIImageView alloc] initWithImage:icon];
- //   label.frame = self.bounds;
+    [label removeFromSuperview];
+    //    UIImage *icon = [self getIcon];
+    //    imgView = [[UIImageView alloc] initWithImage:icon];
+    label = [[UILabel alloc] init];
+    label.text = @"OK";
+    label.frame = self.bounds;
     [self addSubview:label];
 }
 

@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05D682531CBF12F00066E4D9 /* SLDSIconViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D682511CBF12F00066E4D9 /* SLDSIconViewManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05D682541CBF12F00066E4D9 /* SLDSIconViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D682521CBF12F00066E4D9 /* SLDSIconViewManager.m */; };
 		05D682621CBF163C0066E4D9 /* SLDSImgView.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D682601CBF163C0066E4D9 /* SLDSImgView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05D682631CBF163C0066E4D9 /* SLDSImgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D682611CBF163C0066E4D9 /* SLDSImgView.m */; };
+		05D682921CBF2BEA0066E4D9 /* SLDSImgViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D682901CBF2BEA0066E4D9 /* SLDSImgViewManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05D682931CBF2BEA0066E4D9 /* SLDSImgViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D682911CBF2BEA0066E4D9 /* SLDSImgViewManager.m */; };
 		05E4E73D1CBEBC6F00899BCA /* SLDSIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E4E73C1CBEBC6F00899BCA /* SLDSIcon.m */; };
 		05E4E75A1CBEBFCE00899BCA /* SLDSIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E4E73B1CBEBC6F00899BCA /* SLDSIcon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05E4E75B1CBEBFED00899BCA /* DesignSystemReactNative.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E4E6EF1CBDF7BE00899BCA /* DesignSystemReactNative.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,10 +29,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		05D682511CBF12F00066E4D9 /* SLDSIconViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDSIconViewManager.h; sourceTree = "<group>"; };
-		05D682521CBF12F00066E4D9 /* SLDSIconViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDSIconViewManager.m; sourceTree = "<group>"; };
 		05D682601CBF163C0066E4D9 /* SLDSImgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDSImgView.h; sourceTree = "<group>"; };
 		05D682611CBF163C0066E4D9 /* SLDSImgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDSImgView.m; sourceTree = "<group>"; };
+		05D682901CBF2BEA0066E4D9 /* SLDSImgViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDSImgViewManager.h; sourceTree = "<group>"; };
+		05D682911CBF2BEA0066E4D9 /* SLDSImgViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDSImgViewManager.m; sourceTree = "<group>"; };
 		05E4E6EC1CBDF7BE00899BCA /* libDesignSystemReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDesignSystemReactNative.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E4E6EF1CBDF7BE00899BCA /* DesignSystemReactNative.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesignSystemReactNative.h; sourceTree = "<group>"; };
 		05E4E73B1CBEBC6F00899BCA /* SLDSIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDSIcon.h; sourceTree = "<group>"; };
@@ -69,11 +69,11 @@
 		05E4E6EE1CBDF7BE00899BCA /* DesignSystemReactNative */ = {
 			isa = PBXGroup;
 			children = (
+				05D682901CBF2BEA0066E4D9 /* SLDSImgViewManager.h */,
+				05D682911CBF2BEA0066E4D9 /* SLDSImgViewManager.m */,
 				05E4E6EF1CBDF7BE00899BCA /* DesignSystemReactNative.h */,
 				05E4E73B1CBEBC6F00899BCA /* SLDSIcon.h */,
 				05E4E73C1CBEBC6F00899BCA /* SLDSIcon.m */,
-				05D682511CBF12F00066E4D9 /* SLDSIconViewManager.h */,
-				05D682521CBF12F00066E4D9 /* SLDSIconViewManager.m */,
 				05D682601CBF163C0066E4D9 /* SLDSImgView.h */,
 				05D682611CBF163C0066E4D9 /* SLDSImgView.m */,
 			);
@@ -89,8 +89,8 @@
 			files = (
 				05E4E75A1CBEBFCE00899BCA /* SLDSIcon.h in Headers */,
 				05D682621CBF163C0066E4D9 /* SLDSImgView.h in Headers */,
+				05D682921CBF2BEA0066E4D9 /* SLDSImgViewManager.h in Headers */,
 				05E4E75B1CBEBFED00899BCA /* DesignSystemReactNative.h in Headers */,
-				05D682531CBF12F00066E4D9 /* SLDSIconViewManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				05E4E73D1CBEBC6F00899BCA /* SLDSIcon.m in Sources */,
+				05D682931CBF2BEA0066E4D9 /* SLDSImgViewManager.m in Sources */,
 				05D682631CBF163C0066E4D9 /* SLDSImgView.m in Sources */,
-				05D682541CBF12F00066E4D9 /* SLDSIconViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +199,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../node_modules/react-native/React/**",
-					"$(SRCROOT)/../../React/**",
-					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/../../../../node_modules/react-native/React/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -242,8 +241,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../node_modules/react-native/React/**",
-					"$(SRCROOT)/../../React/**",
-					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/../../../../node_modules/react-native/React/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;

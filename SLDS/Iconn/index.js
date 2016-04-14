@@ -1,22 +1,8 @@
 var React = require('react-native');
 var { requireNativeComponent, PropTypes, NativeModules, } = React;
 
-var {
-  ScaleToFill,
-  ScaleAspectFit,
-  ScaleAspectFill,
-  ZIconUtilityAdd,
-  ZIconUtilityAdduser,
-  ZIconUtilityAnnouncement
-} = NativeModules.SLDSImgViewManager;
 
 var SLDSImgView = requireNativeComponent('SLDSImgView', ImgView);
-
-var MODES = {
-  'stretch': ScaleToFill,
-  'contain': ScaleAspectFit,
-  'cover': ScaleAspectFill
-}
 
 var ImgView = React.createClass({
   propTypes: {

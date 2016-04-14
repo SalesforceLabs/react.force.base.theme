@@ -1,23 +1,34 @@
-'use strict';
+var React = require('react-native');
+var { requireNativeComponent, PropTypes, NativeModules, } = React;
 
-const React = require('react-native');
-const Text = require('../Text');
-const View = React.View;
+var ImgView = React.createClass({
+  propTypes: {
+    /*
+      native only
+    */
+    contentMode: PropTypes.number,
+    category: PropTypes.number,
+    icon: PropTypes.number,
+    /*
+    */
+    src: PropTypes.string,
+    resizeMode: PropTypes.string,
+    onFrameChange: PropTypes.func,
+    pitchEnabled: PropTypes.bool,
 
-
-module.exports = React.createClass({
-  getDefaultProps () {
-    return {
-      title:'',
-      detail:''
-    };
   },
-  setNativeProps (nativeProps) {
+  setNativeProps(nativeProps) {
     this._root.setNativeProps(nativeProps);
   },
-  render () {
+  render() {
     return (
-      <View><Text>@</Text></View>
-    );
-  }
+            <SLDSImgView ref={component => this._root = component} {...this.props}
+                {...this.props} 
+            />
+          );
+  },
 });
+
+var SLDSImgView = requireNativeComponent('SLDSImgView', ImgView);
+
+module.exports = ImgView;
