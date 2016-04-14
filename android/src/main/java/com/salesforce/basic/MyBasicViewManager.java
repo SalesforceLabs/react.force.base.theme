@@ -1,11 +1,17 @@
 package com.salesforce.basic;
 
 import android.view.View;
+
+import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 
 public class MyBasicViewManager extends SimpleViewManager<View>
 {
+    public MyBasicViewManager(ReactApplicationContext reactContext) {
+
+    }
+
     @Override
     public String getName()
     {
