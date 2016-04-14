@@ -8,5 +8,6 @@ module.exports = {
   Buttons: require('./Buttons'),
   Text: require('./Text'),
   IconUtility: require('./IconUtility'),
-  Iconn: require('./Iconn')
+  Iconn: require('./Iconn'),
+  IconAndr: require('./IconAndr')
 };
