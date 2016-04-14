@@ -1,9 +1,16 @@
-// ImageView.js
+const React = require('react-native');
+const MyBasicView = React.requireNativeComponent("MyBasicView");
 
-import { requireNativeComponent, PropTypes } from 'react-native';
+const MyComponent = React.createClass({
+  render: function() {
+    style = {
+      width: 50,
+      height: 50,
+      backgroundColor: "red"
+    };
 
-var iface = {
-  name: 'SuperImageView'
-};
+    return <MyBasicView style={style} />;
+  }
+});
 
-module.exports = requireNativeComponent('SuperImageView', iface);
+module.exports = MyComponent;
