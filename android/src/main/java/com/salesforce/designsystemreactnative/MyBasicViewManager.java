@@ -1,4 +1,4 @@
-package com.salesforce.basic;
+package com.salesforce.designsystemreactnative;
 
 import android.view.View;
 
