@@ -10,20 +10,21 @@ import android.graphics.Color;
 import android.graphics.Paint.Style;
 import android.util.AttributeSet;
 import android.view.View;
+import android.graphics.Typeface;
+import com.facebook.react.views.text.ReactFontManager;
+
 
 public class LovelyView extends View{
     private ShapeDrawable mDrawable;
-    private Paint paint;
+    private Paint textPaint;
     //label text
     public LovelyView(Context context){
         super(context,null);
-        int x = 10;
-        int y = 10;
-        int width = 300;
-        int height = 50;
-
-        paint = new Paint();
-        paint.setFlags(Paint.ANTI_ALIAS_FLAG);
+        textPaint = new Paint();
+        textPaint.setFlags(Paint.ANTI_ALIAS_FLAG);
+        textPaint.setTextAlign(Paint.Align.CENTER);
+        Typeface typeface = ReactFontManager.getInstance().getTypeface("SalesforceDesignSystemIconsUtility", 0, context.getAssets());
+        textPaint.setTypeface(typeface);
         mDrawable = new ShapeDrawable(new OvalShape());
         mDrawable.getPaint().setColor(0xff74AC23);
     }
@@ -32,11 +33,11 @@ public class LovelyView extends View{
         int size = 100;
         mDrawable.setBounds(0, 0, this.getWidth(), this.getHeight());
         mDrawable.draw(canvas);
-        paint.setColor(Color.BLACK);
-        paint.setTextSize(size);
-        canvas.drawText("@",0,size, paint);
-//        super.onDraw(canvas);
-
+        int viewWidthHalf = this.getMeasuredWidth()/2;
+        int viewHeightHalf = this.getMeasuredHeight()/2;
+        textPaint.setColor(Color.BLACK);
+        textPaint.setTextSize(viewHeightHalf*2);
+        canvas.drawText("\uEA03",viewWidthHalf,viewHeightHalf*2, textPaint);
     }
 
 }

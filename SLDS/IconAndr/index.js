@@ -5,8 +5,7 @@ const MyComponent = React.createClass({
   render: function() {
     style = {
       width: 50,
-      height: 50,
-      backgroundColor: "red"
+      height: 50
     };
 
     return <MyBasicView style={style} />;
