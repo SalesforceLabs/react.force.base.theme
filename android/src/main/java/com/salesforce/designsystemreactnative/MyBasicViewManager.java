@@ -1,5 +1,6 @@
 package com.salesforce.designsystemreactnative;
 
+import android.util.AttributeSet;
 import android.view.View;
 
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -21,6 +22,6 @@ public class MyBasicViewManager extends SimpleViewManager<View>
     @Override
     public View createViewInstance(ThemedReactContext context)
     {
-        return new View(context);
+        return new LovelyView(context.getBaseContext());
     }
 }

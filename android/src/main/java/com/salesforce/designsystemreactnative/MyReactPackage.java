@@ -19,7 +19,6 @@ public class MyReactPackage implements ReactPackage {
     public List<NativeModule> createNativeModules(
             ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-//        modules.add(new MyBasicViewManager(reactContext));
         return modules;
     }
 
@@ -30,6 +29,8 @@ public class MyReactPackage implements ReactPackage {
 
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-        return Collections.emptyList();
+        return Arrays.<ViewManager>asList(
+                new MyBasicViewManager(reactContext)
+        );
     }
 }
