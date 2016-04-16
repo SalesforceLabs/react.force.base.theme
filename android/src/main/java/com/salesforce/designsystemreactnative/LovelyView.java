@@ -12,11 +12,14 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.graphics.Typeface;
 import com.facebook.react.views.text.ReactFontManager;
+import android.util.Log;
 
 
 public class LovelyView extends View{
     private ShapeDrawable mDrawable;
     private Paint textPaint;
+    private String iconName;
+    private String iconCode;
     //label text
     public LovelyView(Context context){
         super(context,null);
@@ -28,16 +31,25 @@ public class LovelyView extends View{
         mDrawable = new ShapeDrawable(new OvalShape());
         mDrawable.getPaint().setColor(0xff74AC23);
     }
+
+    public void setIconName(String name ){
+        iconName = name;
+        Log.i("!!! SET",name);
+    }
+
+    public void setIconCode(String code ){
+        iconCode = code;
+    }
+
     @Override
     protected void onDraw(Canvas canvas) {
-        int size = 100;
         mDrawable.setBounds(0, 0, this.getWidth(), this.getHeight());
         mDrawable.draw(canvas);
-        int viewWidthHalf = this.getMeasuredWidth()/2;
-        int viewHeightHalf = this.getMeasuredHeight()/2;
+        int viewWidthHalf = this.getMeasuredWidth() / 2;
+        int viewHeightHalf = this.getMeasuredHeight() / 2;
         textPaint.setColor(Color.BLACK);
-        textPaint.setTextSize(viewHeightHalf*2);
-        canvas.drawText("\uEA03",viewWidthHalf,viewHeightHalf*2, textPaint);
+        textPaint.setTextSize(viewHeightHalf * 2);
+        canvas.drawText(iconCode, viewWidthHalf, viewHeightHalf * 2, textPaint);
     }
 
 }

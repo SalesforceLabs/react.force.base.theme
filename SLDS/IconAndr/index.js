@@ -1,15 +1,27 @@
 const React = require('react-native');
 const MyBasicView = React.requireNativeComponent("MyBasicView");
 
-const MyComponent = React.createClass({
-  render: function() {
-    style = {
-      width: 50,
-      height: 50
+module.exports = React.createClass({
+
+  getDefaultProps(){
+    return {
+      size: 50,
+      iconCode: "\uEA03"
     };
+  },
 
-    return <MyBasicView style={style} />;
+  propTypes: {
+    size: React.PropTypes.number,
+    iconName: React.PropTypes.string,
+    iconCode: React.PropTypes.string
+  },
+
+  render () {
+    return <MyBasicView 
+      style={{
+        width: this.props.size,
+        height: this.props.size
+      }} {...this.props} />
   }
-});
 
-module.exports = MyComponent;
+});

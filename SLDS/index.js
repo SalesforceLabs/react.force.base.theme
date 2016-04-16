@@ -9,5 +9,6 @@ module.exports = {
   Text: require('./Text'),
   IconUtility: require('./IconUtility'),
   Iconn: require('./Iconn'),
-  IconAndr: require('./IconAndr')
+  IconAndr: require('./IconAndr'),
+//  SuperView: require('./SuperView')
 };
