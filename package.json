@@ -1,6 +1,6 @@
 {
   "name": "design-system-react-native",
-  "version": "0.0.50",
+  "version": "0.0.53",
   "description": "",
   "main": "SLDS/index.js",
   "scripts": {
