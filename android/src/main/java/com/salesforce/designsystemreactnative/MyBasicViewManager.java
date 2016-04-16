@@ -34,6 +34,10 @@ public class MyBasicViewManager extends SimpleViewManager<View>
         view.setIconCode(iconCode);
     }
 
+    @ReactProp(name = "iconColor")
+    public void setIconColor(LovelyView view, @Nullable String iconColor) {
+        view.setIconColor(iconColor);
+    }
 
     @Override
     public View createViewInstance(ThemedReactContext context)

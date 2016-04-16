@@ -20,6 +20,7 @@ public class LovelyView extends View{
     private Paint textPaint;
     private String iconName;
     private String iconCode;
+    private int iconColor;
     //label text
     public LovelyView(Context context){
         super(context,null);
@@ -32,13 +33,17 @@ public class LovelyView extends View{
         mDrawable.getPaint().setColor(0xff74AC23);
     }
 
-    public void setIconName(String name ){
+    public void setIconName(String name ) {
         iconName = name;
-        Log.i("!!! SET",name);
+        Log.i("!!! SET", name);
     }
 
     public void setIconCode(String code ){
         iconCode = code;
+    }
+
+    public void setIconColor(String color ){
+        iconColor = Color.parseColor(color);
     }
 
     @Override
@@ -47,7 +52,7 @@ public class LovelyView extends View{
         mDrawable.draw(canvas);
         int viewWidthHalf = this.getMeasuredWidth() / 2;
         int viewHeightHalf = this.getMeasuredHeight() / 2;
-        textPaint.setColor(Color.BLACK);
+        textPaint.setColor(iconColor);
         textPaint.setTextSize(viewHeightHalf * 2);
         canvas.drawText(iconCode, viewWidthHalf, viewHeightHalf * 2, textPaint);
     }

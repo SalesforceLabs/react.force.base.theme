@@ -6,14 +6,16 @@ module.exports = React.createClass({
   getDefaultProps(){
     return {
       size: 50,
-      iconCode: "\uEA03"
+      iconCode: "\uEA03",
+      iconColor: "#ff00ff"
     };
   },
 
   propTypes: {
     size: React.PropTypes.number,
     iconName: React.PropTypes.string,
-    iconCode: React.PropTypes.string
+    iconCode: React.PropTypes.string,
+    iconColor: React.PropTypes.string
   },
 
   render () {
