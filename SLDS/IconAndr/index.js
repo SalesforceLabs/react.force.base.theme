@@ -1,5 +1,5 @@
 const React = require('react-native');
-const MyBasicView = React.requireNativeComponent("MyBasicView");
+const SLDSIconUtility = React.requireNativeComponent("SLDSIconUtility");
 
 const iconCodes = require('./iconCodes');
 
@@ -30,7 +30,7 @@ module.exports = React.createClass({
   },
 
   render () {
-    return <MyBasicView 
+    return <SLDSIconUtility 
       style={{
         width: this.props.size,
         height: this.props.size

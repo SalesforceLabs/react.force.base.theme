@@ -28,6 +28,11 @@ project.xcworkspace
 .gradle
 local.properties
 
+android/android.iml
+android/gradle/
+android/gradlew
+android/gradlew.bat
+
 # node.js
 #
 node_modules/

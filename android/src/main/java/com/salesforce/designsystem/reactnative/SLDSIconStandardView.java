@@ -15,14 +15,14 @@ import com.facebook.react.views.text.ReactFontManager;
 import android.util.Log;
 
 
-public class LovelyView extends View{
+public class SLDSIconStandardView extends View{
     private ShapeDrawable mDrawable;
     private Paint textPaint;
     private String iconName;
     private String iconCode;
     private int iconColor;
     //label text
-    public LovelyView(Context context){
+    public SLDSIconStandardView(Context context){
         super(context,null);
         textPaint = new Paint();
         textPaint.setFlags(Paint.ANTI_ALIAS_FLAG);

@@ -11,9 +11,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class MyReactPackage implements ReactPackage {
+public class SLDSPackage implements ReactPackage {
 
-    public MyReactPackage() {}
+    public SLDSPackage() {}
 
     @Override
     public List<NativeModule> createNativeModules(
@@ -30,7 +30,8 @@ public class MyReactPackage implements ReactPackage {
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Arrays.<ViewManager>asList(
-                new MyBasicViewManager(reactContext)
+                new SLDSIconUtilityManager(reactContext),
+                new SLDSIconStandardManager(reactContext)
         );
     }
 }

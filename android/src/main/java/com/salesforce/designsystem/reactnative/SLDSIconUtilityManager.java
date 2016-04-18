@@ -1,47 +1,46 @@
 package com.salesforce.designsystem.reactnative;
 
-import android.util.AttributeSet;
 import android.view.View;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
-import com.facebook.react.views.view.ReactViewGroup;
+
 import javax.annotation.Nullable;
 
 
-public class MyBasicViewManager extends SimpleViewManager<View>
+public class SLDSIconUtilityManager extends SimpleViewManager<View>
 {
-    public MyBasicViewManager(ReactApplicationContext reactContext) {
+    public SLDSIconUtilityManager(ReactApplicationContext reactContext) {
 
     }
 
     @Override
     public String getName()
     {
-        return "MyBasicView";
+        return "SLDSIconUtility";
     }
 
     @ReactProp(name = "iconName")
-    public void setIconName(LovelyView view, @Nullable String iconName) {
+    public void setIconName(SLDSIconUtilityView view, @Nullable String iconName) {
 //        Log.i("PROP","iconName");
         view.setIconName(iconName);
     }
 
     @ReactProp(name = "iconCode")
-    public void setIconCode(LovelyView view, @Nullable String iconCode) {
+    public void setIconCode(SLDSIconUtilityView view, @Nullable String iconCode) {
         view.setIconCode(iconCode);
     }
 
     @ReactProp(name = "iconColor")
-    public void setIconColor(LovelyView view, @Nullable String iconColor) {
+    public void setIconColor(SLDSIconUtilityView view, @Nullable String iconColor) {
         view.setIconColor(iconColor);
     }
 
     @Override
     public View createViewInstance(ThemedReactContext context)
     {
-        return new LovelyView(context.getBaseContext());
+        return new SLDSIconUtilityView(context.getBaseContext());
     }
 }
