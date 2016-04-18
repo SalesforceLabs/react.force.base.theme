@@ -1,4 +1,4 @@
-package com.salesforce.designsystemreactnative;
+package com.salesforce.designsystem.reactnative;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;

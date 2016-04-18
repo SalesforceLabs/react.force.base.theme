@@ -1,4 +1,4 @@
-package com.salesforce.designsystemreactnative;
+package com.salesforce.designsystem.reactnative;
 
 import android.content.Context;
 import android.graphics.drawable.shapes.OvalShape;

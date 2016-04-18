@@ -1,4 +1,4 @@
-package com.salesforce.designsystemreactnative;
+package com.salesforce.designsystem.reactnative;
 
 import javax.annotation.Nullable;
 
