@@ -22,12 +22,6 @@ public class SLDSIconUtilityManager extends SimpleViewManager<View>
         return "SLDSIconUtility";
     }
 
-    @ReactProp(name = "iconName")
-    public void setIconName(SLDSIconUtilityView view, @Nullable String iconName) {
-//        Log.i("PROP","iconName");
-        view.setIconName(iconName);
-    }
-
     @ReactProp(name = "iconCode")
     public void setIconCode(SLDSIconUtilityView view, @Nullable String iconCode) {
         view.setIconCode(iconCode);

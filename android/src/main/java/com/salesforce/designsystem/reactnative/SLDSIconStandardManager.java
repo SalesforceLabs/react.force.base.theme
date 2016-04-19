@@ -23,24 +23,23 @@ public class SLDSIconStandardManager extends SimpleViewManager<View>
     }
 
     @ReactProp(name = "iconName")
-    public void setIconName(SLDSIconUtilityView view, @Nullable String iconName) {
-//        Log.i("PROP","iconName");
+    public void setIconName(SLDSIconStandardView view, @Nullable String iconName) {
         view.setIconName(iconName);
     }
 
     @ReactProp(name = "iconCode")
-    public void setIconCode(SLDSIconUtilityView view, @Nullable String iconCode) {
+    public void setIconCode(SLDSIconStandardView view, @Nullable String iconCode) {
         view.setIconCode(iconCode);
     }
 
     @ReactProp(name = "iconColor")
-    public void setIconColor(SLDSIconUtilityView view, @Nullable String iconColor) {
+    public void setIconColor(SLDSIconStandardView view, @Nullable String iconColor) {
         view.setIconColor(iconColor);
     }
 
     @Override
     public View createViewInstance(ThemedReactContext context)
     {
-        return new SLDSIconUtilityView(context.getBaseContext());
+        return new SLDSIconStandardView(context.getBaseContext());
     }
 }
