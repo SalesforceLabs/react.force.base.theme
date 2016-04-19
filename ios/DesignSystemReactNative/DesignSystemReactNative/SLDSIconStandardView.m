@@ -5,7 +5,7 @@
 
 #import "SLDSIconStandardView.h"
 
-static NSString *const FONT_NAME = @"SalesforceDesignSystemIconsUtility";
+static NSString *const FONT_NAME = @"SalesforceDesignSystemIconsStandard";
 
 @implementation SLDSIconStandardView  {
     NSString *iconCode;

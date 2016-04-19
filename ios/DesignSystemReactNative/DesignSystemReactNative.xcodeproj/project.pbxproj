@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		053AE1111CC608E200003AC8 /* SLDSIconStandardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 053AE10D1CC608E200003AC8 /* SLDSIconStandardView.m */; };
-		053AE1121CC608E200003AC8 /* SLDSIconStandardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 053AE10E1CC608E200003AC8 /* SLDSIconStandardView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		053AE1131CC608E200003AC8 /* SLDSIconStandardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 053AE10F1CC608E200003AC8 /* SLDSIconStandardManager.m */; };
-		053AE1141CC608E200003AC8 /* SLDSIconStandardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 053AE1101CC608E200003AC8 /* SLDSIconStandardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		053AE1311CC60B9500003AC8 /* SLDSIconStandardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 053AE12D1CC60B9500003AC8 /* SLDSIconStandardView.m */; };
+		053AE1321CC60B9500003AC8 /* SLDSIconStandardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 053AE12E1CC60B9500003AC8 /* SLDSIconStandardView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		053AE1331CC60B9500003AC8 /* SLDSIconStandardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 053AE12F1CC60B9500003AC8 /* SLDSIconStandardManager.m */; };
+		053AE1341CC60B9500003AC8 /* SLDSIconStandardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 053AE1301CC60B9500003AC8 /* SLDSIconStandardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05D682621CBF163C0066E4D9 /* SLDSImgView.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D682601CBF163C0066E4D9 /* SLDSImgView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05D682631CBF163C0066E4D9 /* SLDSImgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D682611CBF163C0066E4D9 /* SLDSImgView.m */; };
 		05D682921CBF2BEA0066E4D9 /* SLDSImgViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D682901CBF2BEA0066E4D9 /* SLDSImgViewManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,10 +37,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		053AE10D1CC608E200003AC8 /* SLDSIconStandardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SLDSIconStandardView.m; path = "../../../../../testdev/TestProject/node_modules/design-system-react-native/ios/DesignSystemReactNative/DesignSystemReactNative/SLDSIconStandardView.m"; sourceTree = "<group>"; };
-		053AE10E1CC608E200003AC8 /* SLDSIconStandardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SLDSIconStandardView.h; path = "../../../../../testdev/TestProject/node_modules/design-system-react-native/ios/DesignSystemReactNative/DesignSystemReactNative/SLDSIconStandardView.h"; sourceTree = "<group>"; };
-		053AE10F1CC608E200003AC8 /* SLDSIconStandardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SLDSIconStandardManager.m; path = "../../../../../testdev/TestProject/node_modules/design-system-react-native/ios/DesignSystemReactNative/DesignSystemReactNative/SLDSIconStandardManager.m"; sourceTree = "<group>"; };
-		053AE1101CC608E200003AC8 /* SLDSIconStandardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SLDSIconStandardManager.h; path = "../../../../../testdev/TestProject/node_modules/design-system-react-native/ios/DesignSystemReactNative/DesignSystemReactNative/SLDSIconStandardManager.h"; sourceTree = "<group>"; };
+		053AE12D1CC60B9500003AC8 /* SLDSIconStandardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDSIconStandardView.m; sourceTree = "<group>"; };
+		053AE12E1CC60B9500003AC8 /* SLDSIconStandardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDSIconStandardView.h; sourceTree = "<group>"; };
+		053AE12F1CC60B9500003AC8 /* SLDSIconStandardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDSIconStandardManager.m; sourceTree = "<group>"; };
+		053AE1301CC60B9500003AC8 /* SLDSIconStandardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDSIconStandardManager.h; sourceTree = "<group>"; };
 		05D682601CBF163C0066E4D9 /* SLDSImgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDSImgView.h; sourceTree = "<group>"; };
 		05D682611CBF163C0066E4D9 /* SLDSImgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDSImgView.m; sourceTree = "<group>"; };
 		05D682901CBF2BEA0066E4D9 /* SLDSImgViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDSImgViewManager.h; sourceTree = "<group>"; };
@@ -85,10 +85,10 @@
 		05E4E6EE1CBDF7BE00899BCA /* DesignSystemReactNative */ = {
 			isa = PBXGroup;
 			children = (
-				053AE10D1CC608E200003AC8 /* SLDSIconStandardView.m */,
-				053AE10E1CC608E200003AC8 /* SLDSIconStandardView.h */,
-				053AE10F1CC608E200003AC8 /* SLDSIconStandardManager.m */,
-				053AE1101CC608E200003AC8 /* SLDSIconStandardManager.h */,
+				053AE12D1CC60B9500003AC8 /* SLDSIconStandardView.m */,
+				053AE12E1CC60B9500003AC8 /* SLDSIconStandardView.h */,
+				053AE12F1CC60B9500003AC8 /* SLDSIconStandardManager.m */,
+				053AE1301CC60B9500003AC8 /* SLDSIconStandardManager.h */,
 				05D682901CBF2BEA0066E4D9 /* SLDSImgViewManager.h */,
 				05D682911CBF2BEA0066E4D9 /* SLDSImgViewManager.m */,
 				05E4E6EF1CBDF7BE00899BCA /* DesignSystemReactNative.h */,
@@ -111,9 +111,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				053AE1341CC60B9500003AC8 /* SLDSIconStandardManager.h in Headers */,
+				053AE1321CC60B9500003AC8 /* SLDSIconStandardView.h in Headers */,
 				05D684D71CC576020066E4D9 /* SLDSIconUtilityManager.h in Headers */,
-				053AE1141CC608E200003AC8 /* SLDSIconStandardManager.h in Headers */,
-				053AE1121CC608E200003AC8 /* SLDSIconStandardView.h in Headers */,
 				05E4E75A1CBEBFCE00899BCA /* SLDSIcon.h in Headers */,
 				05D682621CBF163C0066E4D9 /* SLDSImgView.h in Headers */,
 				05D682921CBF2BEA0066E4D9 /* SLDSImgViewManager.h in Headers */,
@@ -181,9 +181,9 @@
 			files = (
 				05E4E73D1CBEBC6F00899BCA /* SLDSIcon.m in Sources */,
 				05D684D81CC576020066E4D9 /* SLDSIconUtilityManager.m in Sources */,
-				053AE1111CC608E200003AC8 /* SLDSIconStandardView.m in Sources */,
+				053AE1311CC60B9500003AC8 /* SLDSIconStandardView.m in Sources */,
 				05D682931CBF2BEA0066E4D9 /* SLDSImgViewManager.m in Sources */,
-				053AE1131CC608E200003AC8 /* SLDSIconStandardManager.m in Sources */,
+				053AE1331CC60B9500003AC8 /* SLDSIconStandardManager.m in Sources */,
 				05D682631CBF163C0066E4D9 /* SLDSImgView.m in Sources */,
 				05D684DC1CC576DC0066E4D9 /* SLDSIconUtilityView.m in Sources */,
 			);
