@@ -1,3 +1,4 @@
 module.exports = {
-  Utility:require('./Utility')
+  Utility:require('./Utility'),
+  Standard:require('./Standard')
 };
