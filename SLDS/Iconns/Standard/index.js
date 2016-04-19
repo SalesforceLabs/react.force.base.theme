@@ -3,10 +3,10 @@ const SLDSIconStandard = React.requireNativeComponent("SLDSIconStandard");
 
 const iconCodes = require('./iconCodes');
 
-const getCodeByName = (iconName) => {
-  const name = iconName.toLowerCase();
+const getCodeAndColorByName = (iconName) => {
+  const name = iconName.toLowerCase().replace(/-/g,'').replace(/_/g,'');
   const index = iconCodes.names.indexOf(name);
-  return iconCodes.codes[index];
+  return {code:iconCodes.codes[index], color:iconCodes.colors[index]};
 };
 
 
@@ -30,13 +30,21 @@ module.exports = React.createClass({
   },
 
   render () {
+    const iconConfig = getCodeAndColorByName(this.props.name)
+    const bgColor = {
+      r: iconConfig.color[0],
+      g: iconConfig.color[1],
+      b: iconConfig.color[2]
+    };
     return <SLDSIconStandard 
       style={{
         width: this.props.size,
         height: this.props.size
       }} 
-      iconCode={getCodeByName(this.props.name)}
-      iconColor={this.props.iconColor} />;
+      iconCode={iconConfig.code}
+      bgColorRed={bgColor.r}
+      bgColorGreen={bgColor.g}
+      bgColorBlue={bgColor.b} />;
   }
 
 });
