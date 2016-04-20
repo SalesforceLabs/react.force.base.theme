@@ -10,21 +10,17 @@ import android.graphics.Typeface;
 import com.facebook.react.views.text.ReactFontManager;
 
 
-public class SLDSIconUtilityView extends View{
-    private ShapeDrawable mDrawable;
+public class SLDSBaseIconView extends View{
     private Paint textPaint;
     private String iconCode;
-    private String fontName;
     private int iconColor;
     private float iconScale = 1.0f;
 
-    public SLDSIconUtilityView(Context context){
+    public SLDSBaseIconView(Context context){
         super(context,null);
         textPaint = new Paint();
         textPaint.setFlags(Paint.ANTI_ALIAS_FLAG);
         textPaint.setTextAlign(Paint.Align.CENTER);
-//        Typeface typeface = ReactFontManager.getInstance().getTypeface("SalesforceDesignSystemIconsUtility", 0, context.getAssets());
-//        textPaint.setTypeface(typeface);
     }
 
     public void setIconCode(String code ){

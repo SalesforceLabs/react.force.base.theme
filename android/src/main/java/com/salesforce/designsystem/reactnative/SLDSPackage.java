@@ -30,8 +30,7 @@ public class SLDSPackage implements ReactPackage {
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Arrays.<ViewManager>asList(
-                new SLDSIconUtilityManager(reactContext),
-                new SLDSIconStandardManager(reactContext)
+                new SLDSBaseIconManager(reactContext)
         );
     }
 }

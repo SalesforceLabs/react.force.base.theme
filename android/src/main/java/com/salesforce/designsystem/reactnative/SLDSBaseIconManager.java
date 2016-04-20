@@ -9,46 +9,41 @@ import com.facebook.react.uimanager.annotations.ReactProp;
 
 import javax.annotation.Nullable;
 
-public class SLDSIconUtilityManager extends SimpleViewManager<View>
+public class SLDSBaseIconManager extends SimpleViewManager<View>
 {
-    public SLDSIconUtilityManager(ReactApplicationContext reactContext) {
+    public SLDSBaseIconManager(ReactApplicationContext reactContext) {
 
     }
 
     @Override
     public String getName()
     {
-        return "SLDSIconUtility";
+        return "SLDSBaseIconView";
     }
 
     @ReactProp(name = "iconScale", defaultFloat = 1f)
-    public void setIconScale(SLDSIconUtilityView view, float iconScale) {
+    public void setIconScale(SLDSBaseIconView view, float iconScale) {
         view.setIconScale(iconScale);
     }
 
     @ReactProp(name = "iconCode")
-    public void setIconCode(SLDSIconUtilityView view, @Nullable String iconCode) {
+    public void setIconCode(SLDSBaseIconView view, @Nullable String iconCode) {
         view.setIconCode(iconCode);
     }
 
     @ReactProp(name = "iconColor")
-    public void setIconColor(SLDSIconUtilityView view, @Nullable String iconColor) {
+    public void setIconColor(SLDSBaseIconView view, @Nullable String iconColor) {
         view.setIconColor(iconColor);
     }
 
     @ReactProp(name = "fontName")
-    public void setFontName(SLDSIconUtilityView view, @Nullable String fontName) {
+    public void setFontName(SLDSBaseIconView view, @Nullable String fontName) {
         view.setFontName(fontName);
     }
-    /*
-        @ReactProp(name = "iconScale")
-        public void setIconScale(SLDSIconUtilityView view, @Nullable Float iconScale) {
-            view.setIconScale(iconScale);
-        }
-    */
+
     @Override
     public View createViewInstance(ThemedReactContext context)
     {
-        return new SLDSIconUtilityView(context.getBaseContext());
+        return new SLDSBaseIconView(context.getBaseContext());
     }
 }

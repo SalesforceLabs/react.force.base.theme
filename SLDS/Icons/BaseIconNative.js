@@ -6,7 +6,7 @@ const {
   View
 } = React;
 
-const SLDSIconUtility = requireNativeComponent('SLDSIconUtility');
+const SLDSIconUtility = requireNativeComponent('SLDSBaseIconView');
 
 module.exports = React.createClass({
   propTypes: {
