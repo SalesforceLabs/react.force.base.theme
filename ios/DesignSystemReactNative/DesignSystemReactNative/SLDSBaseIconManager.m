@@ -1,23 +1,22 @@
-#import <Foundation/Foundation.h>
 #import "RCTConvert.h"
 #import "RCTBridge.h"
-#import "SLDSIconUtilityManager.h"
-#import "SLDSIconUtilityView.h"
+#import "SLDSBaseIconManager.h"
+#import "SLDSBaseIconView.h"
 
 
-@implementation RCTConvert (SLDSIconUtilityView)
+@implementation RCTConvert (SLDSBaseIconView)
 
 
 @end
 
-@implementation SLDSIconUtilityManager
+@implementation SLDSBaseIconManager
 
 RCT_EXPORT_MODULE();
 
 
 - (UIView *)view
 {
-    return [[SLDSIconUtilityView alloc] init];
+    return [[SLDSBaseIconView alloc] init];
 }
 
 - (dispatch_queue_t)methodQueue

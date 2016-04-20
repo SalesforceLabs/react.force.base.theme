@@ -1,14 +1,11 @@
 #import <Foundation/Foundation.h>
 
-#import "RCTBridgeModule.h"
-#import "RCTEventDispatcher.h"
 #import "UIView+React.h"
-#import "RCTLog.h"
 
-#import "SLDSIconUtilityView.h"
+#import "SLDSBaseIconView.h"
 
 
-@implementation SLDSIconUtilityView  {    
+@implementation SLDSBaseIconView  {
     NSString *iconCode;
     UIColor *iconColor;
     NSString *fontName;
@@ -26,16 +23,16 @@
 
 - (void)drawRect:(CGRect)rect
 {
-
+    
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextClearRect(context, rect);
-
+    
     if (!iconColor) {
         iconColor = [UIColor blackColor];
     }
     
     float size = rect.size.height;
-
+    
     CGRect textRect = CGRectMake(0,(size-size*iconScale)/2,size,size*iconScale);
     
     UIFont *font = [UIFont fontWithName:fontName size:textRect.size.height];
@@ -54,12 +51,12 @@
     
     if(font && iconCode){
         [iconCode drawInRect:textRect withAttributes:@{NSFontAttributeName : font,
-                                                          NSForegroundColorAttributeName : iconColor,
-                                                          NSParagraphStyleAttributeName:paragraphStyle
-                                                          }];
+                                                       NSForegroundColorAttributeName : iconColor,
+                                                       NSParagraphStyleAttributeName:paragraphStyle
+                                                       }];
     }
-
- }
+    
+}
 
 -(void)setFontName:(NSString *)fName{
     fontName = fName;
