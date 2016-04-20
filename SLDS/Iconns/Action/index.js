@@ -50,23 +50,24 @@ module.exports = React.createClass({
   },
 
   getIconGlyphStyle () {
+    const size = this.props.size*iconScale;
     return {
       fontFamily: FONT_NAME,
-      fontSize: this.props.size*iconScale,
+      fontSize: size,
       color: 'white',
       textAlign:'center',
       backgroundColor:'transparent',
-      flex:1,
-      alignSelf:'center',
+      height: size
     };
   },
 
   getIconStyle () {
     const bgColor = this.getBGColor();
     return {
-      flexDirection:'row',
+//      flexDirection:'row',
       alignItems:'center',
       justifyContent:'center',
+      alignSelf:'center',
 
       borderRadius: this.props.size/10,
       height:this.props.size,

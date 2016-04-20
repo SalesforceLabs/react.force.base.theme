@@ -3,5 +3,6 @@ module.exports = {
   Utilityy:require('./Utilityy'),
   Standard:require('./Standard'),
   Standardd:require('./Standardd'),
-  Action:require('./Action')
+  Action:require('./Action'),
+  Custom:require('./Custom')
 };

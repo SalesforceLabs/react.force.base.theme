@@ -18,7 +18,7 @@ const getCodeAndColorByName = (iconName) => {
   return {code:iconCodes.codes[index], color:iconCodes.colors[index]};
 };
 
-const FONT_NAME = 'SalesforceDesignSystemIconsStandard';
+const FONT_NAME = 'SalesforceDesignSystemIconsCustom';
 
 
 module.exports = React.createClass({
@@ -64,10 +64,16 @@ module.exports = React.createClass({
   getIconStyle () {
     const bgColor = this.getBGColor();
     return {
+//      flexDirection:'row',
+      alignItems:'center',
+      justifyContent:'center',
+      alignSelf:'center',
+
       borderRadius: this.props.size/10,
       height:this.props.size,
       width:this.props.size,
       backgroundColor:'rgb('+bgColor.red+','+bgColor.green+','+bgColor.blue+')'
+
     };
   },
 
