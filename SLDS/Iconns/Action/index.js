@@ -6,9 +6,14 @@ const {
   View
 } = React;
 
+const GenericIcon = require('../GenericIcon');
+
 const iconCodes = require('./iconCodes');
 
-const iconScale = 0.65;
+
+const FONT_NAME = 'SalesforceDesignSystemIconsAction';
+const ICON_SCALE = 0.65;
+
 
 const getCodeAndColorByName = (iconName) => {
   let name = iconName.toLowerCase();
@@ -18,8 +23,6 @@ const getCodeAndColorByName = (iconName) => {
   return {code:iconCodes.codes[index], color:iconCodes.colors[index]};
 };
 
-const FONT_NAME = 'SalesforceDesignSystemIconsAction';
-
 
 module.exports = React.createClass({
 
@@ -27,21 +30,18 @@ module.exports = React.createClass({
     return {
       size: 50,
       iconCode: "\uEA03",
-      iconColor: "#54698d",
+      iconColor: "white",
       name:'like'
     };
   },
 
   propTypes: {
     size: React.PropTypes.number,
-    name: React.PropTypes.string,
     iconName: React.PropTypes.string,
-    iconCode: React.PropTypes.string,
     iconColor: React.PropTypes.string
   },
 
-  getBGColor () {
-    const iconConfig = getCodeAndColorByName(this.props.name)
+  getBGColor (iconConfig) {
     return {
       red: 255*iconConfig.color[0],
       green: 255*iconConfig.color[1],
@@ -49,42 +49,16 @@ module.exports = React.createClass({
     };
   },
 
-  getIconGlyphStyle () {
-    const size = this.props.size*iconScale;
-    return {
-      fontFamily: FONT_NAME,
-      fontSize: size,
-      color: 'white',
-      textAlign:'center',
-      backgroundColor:'transparent',
-      height: size
-    };
-  },
-
-  getIconStyle () {
-    const bgColor = this.getBGColor();
-    return {
-//      flexDirection:'row',
-      alignItems:'center',
-      justifyContent:'center',
-      alignSelf:'center',
-
-      borderRadius: this.props.size/10,
-      height:this.props.size,
-      width:this.props.size,
-      backgroundColor:'rgb('+bgColor.red+','+bgColor.green+','+bgColor.blue+')'
-
-    };
-  },
-
-
   render () {
     const iconConfig = getCodeAndColorByName(this.props.name)
-      return <View style={this.getIconStyle()}>
-        <Text style={this.getIconGlyphStyle()}>
-          {iconConfig.code}
-        </Text>
-      </View>;
+    const bgColor = this.getBGColor(iconConfig);
+      return <GenericIcon 
+        {... this.props}
+        iconCode={iconConfig.code}
+        iconScale={ICON_SCALE}
+        fontName={FONT_NAME}
+        bgColor={'rgb('+bgColor.red+','+bgColor.green+','+bgColor.blue+')'}
+      />
   }
 
 });
