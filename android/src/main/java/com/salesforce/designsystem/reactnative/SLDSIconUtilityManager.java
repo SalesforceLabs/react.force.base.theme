@@ -24,7 +24,8 @@ public class SLDSIconUtilityManager extends SimpleViewManager<View>
 
     @ReactProp(name = "iconCode")
     public void setIconCode(SLDSIconUtilityView view, @Nullable String iconCode) {
-        view.setIconCode(iconCode);
+//        view.setIconCode(iconCode.replaceAll("-","\\"));
+        view.setIconCode("\uEAB0");
     }
 
     @ReactProp(name = "iconColor")
@@ -32,6 +33,16 @@ public class SLDSIconUtilityManager extends SimpleViewManager<View>
         view.setIconColor(iconColor);
     }
 
+    @ReactProp(name = "fontName")
+    public void setFontName(SLDSIconUtilityView view, @Nullable String fontName) {
+        view.setFontName(fontName);
+    }
+    /*
+        @ReactProp(name = "iconScale")
+        public void setIconScale(SLDSIconUtilityView view, @Nullable Float iconScale) {
+            view.setIconScale(iconScale);
+        }
+    */
     @Override
     public View createViewInstance(ThemedReactContext context)
     {

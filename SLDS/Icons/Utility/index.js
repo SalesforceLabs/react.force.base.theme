@@ -6,6 +6,8 @@ const {
 } = React;
 
 const BaseIcon = require('../BaseIcon');
+const BaseIconNative = require('../BaseIconNative');
+
 
 const iconCodes = require('./iconCodes');
 
@@ -17,7 +19,7 @@ const ICON_SCALE = 1;
 const getCodeByName = (iconName) => {
   const name = iconName.toLowerCase().replace(/_/g,'');
   const index = iconCodes.names.indexOf(name);
-  return iconCodes.codes[index];
+  return iconCodes.codes[index].replace('\\','-');
 };
 
 
@@ -39,7 +41,7 @@ module.exports = React.createClass({
   },
 
   render () {
-      return <BaseIcon 
+      return <BaseIconNative 
         {... this.props}
         style={this.props.style}
         iconCode={getCodeByName(this.props.name)}

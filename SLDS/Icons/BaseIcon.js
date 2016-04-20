@@ -3,7 +3,8 @@ const React = require('react-native');
 const {
   StyleSheet,
   Text,
-  View
+  View,
+  PixelRatio
 } = React;
 
 module.exports = React.createClass({
@@ -32,11 +33,14 @@ module.exports = React.createClass({
     const size = this.props.size*this.props.iconScale;
     return {
       fontFamily: this.props.fontName,
-      fontSize: size,
+      fontSize: PixelRatio.roundToNearestPixel(size),
       color: this.props.iconColor,
       textAlign:'center',
       backgroundColor:'transparent',
-      height: size
+      height: PixelRatio.roundToNearestPixel(size),
+      alignSelf:'center',
+      textAlignVertical:'bottom',
+      lineHeight:Math.round(size),
     };
   },
 
@@ -44,11 +48,12 @@ module.exports = React.createClass({
     return {
       alignItems:'center',
       justifyContent:'center',
-      alignSelf:'center',
       borderRadius: this.props.size/10,
       height:this.props.size,
       width:this.props.size,
-      backgroundColor:this.props.bgColor
+      backgroundColor:this.props.bgColor,
+      alignSelf:'center',
+      flex:1
     };
   },
 
