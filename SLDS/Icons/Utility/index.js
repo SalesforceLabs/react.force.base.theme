@@ -45,7 +45,7 @@ module.exports = React.createClass({
                 backgroundColor:'transparent',
                 borderRadius:Math.floor(this.props.size/10)
               }}><BaseIconNative 
-                  style={{width:this.props.size,height:this.props.size}}
+                  style={[{width:50,height:50},this.props.style]}
                   iconCode={getCodeByName(this.props.name)}
                   iconColor={this.props.iconColor}
                   iconScale={ICON_SCALE}
