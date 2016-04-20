@@ -23,7 +23,7 @@ module.exports = React.createClass({
   render () {
     return (
       <Text {...this.props} style={[this.props.style, getDefaultStyle()]}>
-        ! {this.props.children}
+        {this.props.children}
       </Text>
     );
   }
