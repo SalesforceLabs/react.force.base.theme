@@ -1,6 +1,6 @@
 {
   "name": "design-system-react-native",
-  "version": "0.0.95",
+  "version": "0.0.96",
   "description": "",
   "main": "SLDS/index.js",
   "scripts": {
@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/madpotato/design-system-react-native#readme",
   "peerDependencies": {
-    "react-native": "^0.23.1"
+    "react-native": ">0.23.1"
   }
 }
