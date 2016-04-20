@@ -18,7 +18,7 @@ public class SLDSBaseIconManager extends SimpleViewManager<View>
     @Override
     public String getName()
     {
-        return "SLDSBaseIconView";
+        return "SLDSBaseIcon";
     }
 
     @ReactProp(name = "iconScale", defaultFloat = 1f)
