@@ -8,6 +8,8 @@ const {
 
 const iconCodes = require('./iconCodes');
 
+const iconScale = 0.65;
+
 const getCodeAndColorByName = (iconName) => {
   let name = iconName.toLowerCase();
   name = name.replace(/_/g,'');
@@ -50,21 +52,27 @@ module.exports = React.createClass({
   getIconGlyphStyle () {
     return {
       fontFamily: FONT_NAME,
-      fontSize: this.props.size,
+      fontSize: this.props.size*iconScale,
       color: 'white',
       textAlign:'center',
-      backgroundColor:'transparent'
-
+      backgroundColor:'transparent',
+      flex:1,
+      alignSelf:'center',
     };
   },
 
   getIconStyle () {
     const bgColor = this.getBGColor();
     return {
+      flexDirection:'row',
+      alignItems:'center',
+      justifyContent:'center',
+
       borderRadius: this.props.size/10,
       height:this.props.size,
       width:this.props.size,
       backgroundColor:'rgb('+bgColor.red+','+bgColor.green+','+bgColor.blue+')'
+
     };
   },
 
