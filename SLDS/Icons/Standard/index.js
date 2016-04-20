@@ -6,19 +6,17 @@ const {
   View
 } = React;
 
-const GenericIcon = require('../GenericIcon');
+const BaseIcon = require('../BaseIcon');
 
 const iconCodes = require('./iconCodes');
 
 
-const FONT_NAME = 'SalesforceDesignSystemIconsAction';
-const ICON_SCALE = 0.65;
+const FONT_NAME = 'SalesforceDesignSystemIconsStandard';
+const ICON_SCALE = 1;
 
 
 const getCodeAndColorByName = (iconName) => {
-  let name = iconName.toLowerCase();
-  name = name.replace(/_/g,'');
-  console.log('name: ',name);
+  const name = iconName.toLowerCase().replace(/_/g,'');
   const index = iconCodes.names.indexOf(name);
   return {code:iconCodes.codes[index], color:iconCodes.colors[index]};
 };
@@ -52,7 +50,7 @@ module.exports = React.createClass({
   render () {
     const iconConfig = getCodeAndColorByName(this.props.name)
     const bgColor = this.getBGColor(iconConfig);
-      return <GenericIcon 
+      return <BaseIcon 
         {... this.props}
         iconCode={iconConfig.code}
         iconScale={ICON_SCALE}

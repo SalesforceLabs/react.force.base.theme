@@ -1,10 +1,21 @@
 const React = require('react-native');
-const SLDSIconUtility = React.requireNativeComponent("SLDSIconUtility");
+
+const {
+  Text,
+  View
+} = React;
+
+const BaseIcon = require('../BaseIcon');
 
 const iconCodes = require('./iconCodes');
 
+
+const FONT_NAME = 'SalesforceDesignSystemIconsUtility';
+const ICON_SCALE = 1;
+
+
 const getCodeByName = (iconName) => {
-  const name = iconName.toLowerCase();
+  const name = iconName.toLowerCase().replace(/_/g,'');
   const index = iconCodes.names.indexOf(name);
   return iconCodes.codes[index];
 };
@@ -23,20 +34,18 @@ module.exports = React.createClass({
 
   propTypes: {
     size: React.PropTypes.number,
-    name: React.PropTypes.string,
     iconName: React.PropTypes.string,
-    iconCode: React.PropTypes.string,
     iconColor: React.PropTypes.string
   },
 
   render () {
-    return <SLDSIconUtility 
-      style={{
-        width: this.props.size,
-        height: this.props.size
-      }} 
-      iconCode={getCodeByName(this.props.name)}
-      iconColor={this.props.iconColor} />;
+      return <BaseIcon 
+        {... this.props}
+        style={this.props.style}
+        iconCode={getCodeByName(this.props.name)}
+        iconScale={ICON_SCALE}
+        fontName={FONT_NAME}
+      />
   }
 
 });

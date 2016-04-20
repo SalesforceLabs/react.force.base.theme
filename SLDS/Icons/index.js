@@ -1,6 +1,6 @@
 module.exports = {
-  Utility: require('./utility'),
-  Custom: require('./custom'),
-  Action: require('./action'),
-  Standard: require('./standard')
+  Utility:require('./Utility'),
+  Standard:require('./Standard'),
+  Action:require('./Action'),
+  Custom:require('./Custom')
 };

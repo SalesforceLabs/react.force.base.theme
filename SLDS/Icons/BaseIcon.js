@@ -33,7 +33,7 @@ module.exports = React.createClass({
     return {
       fontFamily: this.props.fontName,
       fontSize: size,
-      color: 'white',
+      color: this.props.iconColor,
       textAlign:'center',
       backgroundColor:'transparent',
       height: size
@@ -54,7 +54,7 @@ module.exports = React.createClass({
 
 
   render () {
-    return <View style={this.getIconStyle()}>
+    return <View {... this.props} style={this.getIconStyle()} >
       <Text style={this.getIconGlyphStyle()}>
         {this.props.iconCode}
       </Text>

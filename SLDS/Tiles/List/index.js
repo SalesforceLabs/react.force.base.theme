@@ -5,7 +5,7 @@ const styles = require('./styles');
 const Text = require('../../Text');
 const ImgView = require('../../ImgView');
 const View = React.View;
-const Icons = require('../../Icons');
+//const Icons = require('../../Icons');
 
 module.exports = React.createClass({
   getDefaultProps: function() {
@@ -25,7 +25,9 @@ module.exports = React.createClass({
             flexDirection:'row'}]}>
 
           <View style={styles['View slds-media__figure']}>
+{/*
             <Icons.Standard style={styles['View slds-icon icon-doctype-zip']} icon={this.props.icon} />
+*/}
           </View>
 
           <View style={styles['View slds-media__body']}>
