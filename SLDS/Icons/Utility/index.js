@@ -41,13 +41,17 @@ module.exports = React.createClass({
   },
 
   render () {
-      return <BaseIconNative 
-        {... this.props}
-        style={this.props.style}
-        iconCode={getCodeByName(this.props.name)}
-        iconScale={ICON_SCALE}
-        fontName={FONT_NAME}
-      />
+      return <View style={{
+                backgroundColor:'transparent',
+                borderRadius:Math.floor(this.props.size/10)
+              }}><BaseIconNative 
+                  style={{width:this.props.size,height:this.props.size}}
+                  iconCode={getCodeByName(this.props.name)}
+                  iconColor={this.props.iconColor}
+                  iconScale={ICON_SCALE}
+                  fontName={FONT_NAME}
+                />
+              </View>;
   }
 
 });

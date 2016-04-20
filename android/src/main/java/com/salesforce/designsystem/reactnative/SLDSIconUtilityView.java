@@ -16,7 +16,7 @@ public class SLDSIconUtilityView extends View{
     private String iconCode;
     private String fontName;
     private int iconColor;
-    private float iconScale = 0.65f;
+    private float iconScale = 1.0f;
 
     public SLDSIconUtilityView(Context context){
         super(context,null);
@@ -40,8 +40,8 @@ public class SLDSIconUtilityView extends View{
         iconColor = Color.parseColor(color);
     }
 
-    public void setIconScale(Float scale ){
-        iconScale = scale.floatValue();
+    public void setIconScale(float scale ){
+        iconScale = scale;
     }
 
 

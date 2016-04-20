@@ -9,7 +9,6 @@ import com.facebook.react.uimanager.annotations.ReactProp;
 
 import javax.annotation.Nullable;
 
-
 public class SLDSIconUtilityManager extends SimpleViewManager<View>
 {
     public SLDSIconUtilityManager(ReactApplicationContext reactContext) {
@@ -22,10 +21,14 @@ public class SLDSIconUtilityManager extends SimpleViewManager<View>
         return "SLDSIconUtility";
     }
 
+    @ReactProp(name = "iconScale", defaultFloat = 1f)
+    public void setIconScale(SLDSIconUtilityView view, float iconScale) {
+        view.setIconScale(iconScale);
+    }
+
     @ReactProp(name = "iconCode")
     public void setIconCode(SLDSIconUtilityView view, @Nullable String iconCode) {
-//        view.setIconCode(iconCode.replaceAll("-","\\"));
-        view.setIconCode("\uEAB0");
+        view.setIconCode(iconCode);
     }
 
     @ReactProp(name = "iconColor")
