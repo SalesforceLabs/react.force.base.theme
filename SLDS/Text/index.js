@@ -10,7 +10,7 @@ const {
 
 const getDefaultStyle = () => {
   return {
-    fontFamily: 'SalesforceSans-Bold',
+    fontFamily: 'SalesforceSans-Regular',
   }
 };
 

@@ -6,6 +6,8 @@ const {
   View
 } = React;
 
+const pick = require('lodash.pick');
+
 const BaseIcon = require('../BaseIcon');
 const BaseIconNative = require('../BaseIconNative');
 
@@ -51,12 +53,17 @@ module.exports = React.createClass({
   render () {
     const iconConfig = getCodeAndColorByName(this.props.name)
     const bgColor = this.getBGColor(iconConfig);
+
+    console.log('======================');
+    console.log(pick(this.props.style,['width','height']));
+    console.log('======================');
+
       return <View style={{
               backgroundColor:'rgb('+bgColor.red+','+bgColor.green+','+bgColor.blue+')',
               borderRadius:Math.floor(this.props.size/10)
             }}>
       <BaseIconNative 
-        style={[{width:50,height:50},this.props.style]}
+        style={[{width:50,height:50},pick(this.props.style,['width','height'])]}
         iconCode={iconConfig.code}
         iconColor='#ffffff'
         iconScale={ICON_SCALE}

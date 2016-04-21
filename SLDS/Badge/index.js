@@ -1,7 +1,7 @@
 'use strict';
 
 const React = require('react-native');
-const styles = require('../styles');
+const styles = require('./styles');
 const Text = require('../Text');
 const View = React.View;
 

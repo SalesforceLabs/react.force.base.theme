@@ -6,6 +6,8 @@ const {
   View
 } = React;
 
+const pick = require('lodash.pick');
+
 const BaseIcon = require('../BaseIcon');
 const BaseIconNative = require('../BaseIconNative');
 
@@ -56,7 +58,7 @@ module.exports = React.createClass({
               borderRadius:Math.floor(this.props.size/10)
             }}>
       <BaseIconNative 
-        style={[{width:50,height:50},this.props.style.pick(['width','height'])]}
+        style={[{width:50,height:50},pick(this.props.style,['width','height'])]}
         iconCode={iconConfig.code}
         iconColor='#ffffff'
         iconScale={ICON_SCALE}
