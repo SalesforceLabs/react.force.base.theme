@@ -6,25 +6,29 @@ const Text = require('../Text');
 const View = React.View;
 
 module.exports = React.createClass({
-  getDefaultProps: function() {
+  getDefaultProps () {
     return {
       label: '',
-    }
+      theme:'default'
+    };
   },
-  getClassName: function() {
+  getClassName () {
     let classNames = ['slds-badge'];
     if(this.props.theme){
       classNames.push('slds-theme--'+this.props.theme);
     }
+    console.log(classNames);
     return classNames.join(' ');
   },
-  render: function() {
+  render () {
     const className = this.getClassName();
     return (
-      <View style={styles.badges['View '+className]}>
-        <Text style={styles.badges['Text '+className]}>
-          {this.props.label}
-        </Text>
+      <View style={{flexDirection:'row'}}>
+        <View style={styles['View '+className]}>
+          <Text style={styles['Text '+className]}>
+            {this.props.label}
+          </Text>
+        </View>
       </View>
     );
   }

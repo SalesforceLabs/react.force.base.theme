@@ -18,7 +18,7 @@ module.exports = React.createClass({
   render () {
     return (
       <View ref={component => this._root = component} {...this.props} 
-        style={styles['View slds-tile']}>
+        style={[styles['View slds-tile']]}>
         <View style={[styles['View slds-tile__title slds-truncate']]}>
           <Text
             style={styles['Text a']}

@@ -1,8 +1,4 @@
-var React = require('react-native');
-var StyleSheet = React.StyleSheet;
-var PixelRatio = React.PixelRatio;
-
-const styles = { 'View slds-badge':
+module.exports = { 'View slds-badge':
    { backgroundColor: '#e0e5ee',
      borderRadius: 240,
      paddingBottom: 4,
@@ -40,5 +36,5 @@ const styles = { 'View slds-badge':
      paddingLeft: 8,
      paddingRight: 8,
      paddingTop: 4 },
-  'Text slds-badge slds-theme--inverse': { fontSize: 10, color: '#fff' } };
-module.exports = StyleSheet.create(styles);
+  'Text slds-badge slds-theme--inverse': { fontSize: 10, color: '#fff' } 
+};
