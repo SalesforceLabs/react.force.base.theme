@@ -68,3 +68,5 @@ module.exports = React.createClass({
   }
 
 });
+
+module.exports.names = iconCodes.names;
