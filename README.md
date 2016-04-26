@@ -31,7 +31,7 @@ import statement:
 import SLDS from 'design-system-react-native';
 ```
 
-Branded Button usage:
+Branded Button jsx code:
 
 ```jsx
 <SLDS.Buttons.Base.Brand 
@@ -42,6 +42,7 @@ Branded Button usage:
 ```
 
 Result:
+
 ![Branded Button](/README_files/button-small.png?raw=true)
 
 
