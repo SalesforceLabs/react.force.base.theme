@@ -67,4 +67,4 @@ module.exports = React.createClass({
 
 });
 
-module.exports.name = iconCodes.names;
+module.exports.names = iconCodes.names;
