@@ -31,7 +31,7 @@ Import statement:
 import SLDS from 'design-system-react-native';
 ```
 
-Lightning Design System [Button Brand](https://www.lightningdesignsystem.com/components/buttons/) JSX code:
+[Button Brand](https://www.lightningdesignsystem.com/components/buttons/) JSX code:
 
 ```jsx
 <SLDS.Buttons.Base.Brand 
@@ -45,7 +45,18 @@ Result:
 
 ![Branded Button](/README_files/button-small.png?raw=true)
 
-for code samples and component usage please see:
+
+[Utility Icon](https://www.lightningdesignsystem.com/components/icons/) JSX code:
+
+```jsx
+<SLDS.Icons.Utility 
+  name="like" />
+```
+Result:
+
+![Utility Icon](/README_files/icon-small.png?raw=true)
+
+for more code samples and component usage please see:
 
 ## Demo
 iOS/Android [Sample project repo](https://github.com/madpotato/ComponentsApp)
