@@ -2,6 +2,8 @@
 
 React Native components for [Salesforce Lightning Design System](https://www.lightningdesignsystem.com/). 
 
+Works is progress
+
 ![iOS Screenshot](/README_files/ios-screen-small.png?raw=true)
 
 ## Setup
@@ -21,3 +23,5 @@ React Native components for [Salesforce Lightning Design System](https://www.lig
 
   ```
   
+## Demo project
+iOS/Android project [repo](https://github.com/madpotato/ComponentsApp)
