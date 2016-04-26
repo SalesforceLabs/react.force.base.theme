@@ -1,6 +1,6 @@
 # design-system-react-native
 
-React Native components for [Salesforce Lightning Design System](https://www.lightningdesignsystem.com/). 
+React Native components (iOS/Android) for [Salesforce Lightning Design System](https://www.lightningdesignsystem.com/). 
 
 Works is progress
 
@@ -24,4 +24,4 @@ Works is progress
   ```
   
 ## Demo project
-iOS/Android project [repo](https://github.com/madpotato/ComponentsApp)
+iOS/Android [Sample project repo](https://github.com/madpotato/ComponentsApp)
