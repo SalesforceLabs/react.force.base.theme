@@ -1,3 +1,3 @@
 # design-system-react-native
 
-Salesforce Lightning Design System Components for React Native
+React Native components for [Salesforce Lightning Design System](https://www.lightningdesignsystem.com/). 
