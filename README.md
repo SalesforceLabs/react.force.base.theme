@@ -49,8 +49,7 @@ Result:
 [Utility Icon](https://www.lightningdesignsystem.com/components/icons/) JSX code:
 
 ```jsx
-<SLDS.Icons.Utility 
-  name="like" />
+<SLDS.Icons.Utility name="like" />
 ```
 Result:
 
