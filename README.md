@@ -33,8 +33,8 @@ import SLDS from 'design-system-react-native';
 
 Branded Button:
 
-```
-<SLDS.Buttons.Base.Branded 
+```jsx
+<SLDS.Buttons.Base.Brand 
   label="Click me!" 
   onPress={()=>{
     alert('Clicked!')
