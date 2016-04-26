@@ -23,5 +23,24 @@ Works is progress
 
   ```
   
+## Usage
+
+import statement:
+
+```
+import SLDS from 'design-system-react-native';
+```
+
+Branded Button:
+
+```
+<SLDS.Buttons.Base.Branded 
+  label="Click me!" 
+  onPress={()=>{
+    alert('Clicked!')
+  }} />
+```
+
+
 ## Demo
 iOS/Android [Sample project repo](https://github.com/madpotato/ComponentsApp)
