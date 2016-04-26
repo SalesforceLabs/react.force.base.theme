@@ -31,11 +31,11 @@ Import statement:
 import SLDS from 'design-system-react-native';
 ```
 
-Branded Button jsx code:
+Lightning Design System [Button Brand](https://www.lightningdesignsystem.com/components/buttons/) JSX code:
 
 ```jsx
 <SLDS.Buttons.Base.Brand 
-  label="Branded Button" 
+  label="Button Brand" 
   onPress={()=>{
     alert('Clicked!')
   }} />
