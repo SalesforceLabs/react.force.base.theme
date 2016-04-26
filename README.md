@@ -25,7 +25,7 @@ Works is progress
   
 ## Usage
 
-import statement:
+Import statement:
 
 ```
 import SLDS from 'design-system-react-native';
