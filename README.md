@@ -8,7 +8,7 @@ Works is progress
 
 ## Setup
 
-1. npm install:
+1. add to existing React Native project:
 
   ```
 
