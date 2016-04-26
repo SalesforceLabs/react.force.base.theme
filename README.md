@@ -31,7 +31,7 @@ import statement:
 import SLDS from 'design-system-react-native';
 ```
 
-Branded Button:
+Branded Button usage:
 
 ```jsx
 <SLDS.Buttons.Base.Brand 
