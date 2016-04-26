@@ -2,7 +2,7 @@
 
 React Native components for [Salesforce Lightning Design System](https://www.lightningdesignsystem.com/). 
 
-![iOS Screenshot](/README_files/ios-screen.png?raw=true)
+![iOS Screenshot](/README_files/ios-screen-small.png?raw=true)
 
 ## Setup
 
