@@ -35,11 +35,14 @@ Branded Button usage:
 
 ```jsx
 <SLDS.Buttons.Base.Brand 
-  label="Click me!" 
+  label="Branded Button" 
   onPress={()=>{
     alert('Clicked!')
   }} />
 ```
+
+Result:
+![Branded Button](/README_files/button-small.png?raw=true)
 
 
 ## Demo
