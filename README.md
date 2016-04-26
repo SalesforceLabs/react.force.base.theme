@@ -8,4 +8,8 @@ React Native components for [Salesforce Lightning Design System](https://www.lig
   ```
   npm install git+ssh://git@github.com:madpotato/design-system-react-native.git --save
   ```
-2. 
+2. link resources and native classes. [rnpm info](http://facebook.github.io/react-native/releases/0.24/docs/linking-libraries-ios.html#automatic-linking)
+  ```
+  rnpm link
+  ```
+  
