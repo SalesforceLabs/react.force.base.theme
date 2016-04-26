@@ -45,6 +45,7 @@ Result:
 
 ![Branded Button](/README_files/button-small.png?raw=true)
 
+for code samples and component usage please see:
 
 ## Demo
 iOS/Android [Sample project repo](https://github.com/madpotato/ComponentsApp)
