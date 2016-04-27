@@ -1,0 +1,21 @@
+module.exports = [
+  'backgroundColor',
+  'borderColor',
+  'borderTopColor',
+  'borderRightColor',
+  'borderBottomColor',
+  'borderLeftColor',
+  'borderRadius',
+  'opacity',
+  'overflow',
+  'shadowColor',
+  'shadowOffset',
+  'shadowOpacity',
+  'shadowRadius',
+  'transformMatrix',
+  'rotation',
+  'scaleX',
+  'scaleY',
+  'translateX',
+  'translateY'
+];
