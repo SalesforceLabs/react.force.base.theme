@@ -34,7 +34,7 @@ Works is progress
 
 Import statement:
 
-```
+```jsx
 import SLDS from 'design-system-react-native';
 ```
 
