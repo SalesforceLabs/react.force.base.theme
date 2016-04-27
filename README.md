@@ -8,7 +8,7 @@ Works is progress
 
 ## Setup
 
-1. add to existing React Native project:
+1. add to an existing React Native project:
 
   ```
 
