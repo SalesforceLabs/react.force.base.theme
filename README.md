@@ -15,7 +15,7 @@ Works is progress
   npm install git+ssh://git@github.com:madpotato/design-system-react-native.git --save
 
   ```
-2. if rnpm is not yet installed: ([RNPM](http://facebook.github.io/react-native/releases/0.24/docs/linking-libraries-ios.html#automatic-linking) installation and usage info)
+2. if `rnpm` is not yet installed: ([RNPM](http://facebook.github.io/react-native/releases/0.24/docs/linking-libraries-ios.html#automatic-linking) installation and usage info)
 
   ```
 
