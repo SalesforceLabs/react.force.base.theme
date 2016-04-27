@@ -35,7 +35,6 @@
     "react-native-css": "https://github.com/madpotato/react-native-css.git#master",
     "lodash.merge": "^4.3.2",
     "lodash.omit": "^4.1.0",
-    "lodash.pick": "^4.1.0",
     "request": "^2.69.0",
     "css-longhand": "^1.1.1",
     "web-resource-inliner": "^1.2.1",

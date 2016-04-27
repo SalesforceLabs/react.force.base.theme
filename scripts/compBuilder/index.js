@@ -26,6 +26,9 @@ const VIEW_STYLE_PROPS = PROP_TYPES.Layout.concat(PROP_TYPES.View);
 
 const TEXT_STYLE_PROPS = PROP_TYPES.Text;
 
+const CONFIG = require('./config');
+
+const UTILS = require('./utils');
 
 const toCSS = (className, definition)=>{
   return className + '{ '+definition+' }';
@@ -70,41 +73,9 @@ const remtopx = postcss.plugin('remtopx', function (opts) {
     };
 });
 
-const remtopxjs = postcssJs.sync([ remtopx ]);
+//const remtopxjs = postcssJs.sync([ remtopx ]);
 
 
-const getViewStyles = (styles)=>{
-  return pick(styles,VIEW_STYLE_PROPS);
-//  return styles;
-};
-
-const getTextStyles = (styles)=>{
-  return pick(styles,TEXT_STYLE_PROPS);
-//  return styles;
-};
-
-const getStyleName = (tagName, className)=>{
-  if(className){
-    return className;
-  }
-  return tagName;
-};
-
-const processStyle = (el,output)=>{
-  if(el && el.attribs){
-    const name = getStyleName(el.tagName, el.attribs['class']);
-    console.log('name: '+name);
-    const value = el.attribs['style'];
-    const long = cssLonghand(toCSS(name,value));
-    const rnCSS = css.toJSS(long);
-    const style = rnCSS[name];
-    output['View '+name] = getViewStyles(style);
-    output['Text '+name] = getTextStyles(style);
-  }
-  $(el).children().toArray().forEach((el)=>{
-    processStyle(el,output);
-  });
-};
 
 //const url = 'https://www.lightningdesignsystem.com/components/tiles/flavors/base/_tile-with-icon.html';
 //const url = 'http://www.lightningdesignsystem.com/components/badges/flavors/base/_default.html';
@@ -112,7 +83,9 @@ const processStyle = (el,output)=>{
 //const url = 'http://www.lightningdesignsystem.com/components/page-headers/flavors/base/_default.html';
 //const url = 'http://www.lightningdesignsystem.com/components/forms/flavors/input/_input-read-only.html';
 //const url = 'http://www.lightningdesignsystem.com/components/tiles/flavors/base/_tile.html';
-const url = 'https://www.lightningdesignsystem.com/components/buttons/flavors/base/_button-brand.html';
+//const url = 'https://www.lightningdesignsystem.com/components/buttons/flavors/base/_button-brand.html';
+
+const url = CONFIG[0].url;
 
 request({
   uri: url,
@@ -129,7 +102,7 @@ request({
     const output = {};
     $ = cheerio.load(inlined);
 //    processStyle($('.demo-only'),output);
-    processStyle($('#preview'),output);
+    UTILS.processStyle($('#preview'),output);
 
     console.log(output);
   });
