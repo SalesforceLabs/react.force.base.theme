@@ -1,10 +1,13 @@
 const juice = require('juice');
 const cheerio = require('cheerio');
+const postcss = require('postcss');
 
 const cssLonghand = require('css-longhand');
 
 const RNC = require('react-native-css');
 const css = new RNC();
+
+const merge = require('lodash.merge');
 
 
 const PROP_TYPES = require('./propTypes');
@@ -52,6 +55,47 @@ const toCSS = (className, definition)=>{
 };
 
 
+var DEFAULTS = {
+    rootFontSize: 16
+};
+var REM_REGEX = /([0-9]*\.?[0-9]+)rem/g;
+
+
+const remtopx = postcss.plugin('remtopx', function (opts) {
+    var options = merge({}, DEFAULTS, opts);
+
+    function replacePx(match, num) {
+        var number = parseFloat(num) * options.rootFontSize;
+        return number;
+    }
+
+    return function remtopx(css) {
+        css.walkDecls(function (decl) {
+            if(decl.value.indexOf('px')>0){
+              decl.value = decl.value.replace(/([\d.]+)(px|pt|em|%)/,'$1');
+              return;
+            }
+            if (decl.value.indexOf('rem') === -1) {
+                return;
+            }
+            if (decl.prop === 'display' && decl.value === 'flex'){
+              console.log('DISPLAY FLEX!!!');
+            }
+            decl.value = decl.value.replace(REM_REGEX, replacePx);
+        });
+
+        css.walkAtRules('media', function (rule) {
+            if (rule.params.indexOf('rem') === -1) {
+                return;
+            }
+
+            rule.params = rule.params.replace(REM_REGEX, replacePx);
+        });
+    };
+});
+
+
+
 module.exports = {
 
   getViewStyles: getStyleName,
@@ -62,6 +106,8 @@ module.exports = {
 
   processStyle: processStyle,
 
-  toCSS: toCSS
+  toCSS: toCSS,
+
+  remtopx: remtopx
 
 };
