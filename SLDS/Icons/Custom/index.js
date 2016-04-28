@@ -6,7 +6,6 @@ const {
   View
 } = React;
 
-const BaseIcon = require('../BaseIcon');
 const BaseIconNative = require('../BaseIconNative');
 
 const iconCodes = require('./iconCodes');
@@ -48,10 +47,14 @@ module.exports = React.createClass({
     };
   },
 
+  setNativeProps(nativeProps) {
+    this._root.setNativeProps(nativeProps);
+  },
+
   render () {
     const iconConfig = getCodeAndColorByName(this.props.name)
     const bgColor = this.getBGColor(iconConfig);
-      return <View style={{
+      return <View {... this.props} style={{
               backgroundColor:'rgb('+bgColor.red+','+bgColor.green+','+bgColor.blue+')',
               borderRadius:Math.floor(this.props.size/10)
             }}>
