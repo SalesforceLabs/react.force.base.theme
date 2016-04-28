@@ -57,7 +57,7 @@ module.exports = React.createClass({
     const iconConfig = getCodeAndColorByName(this.props.name)
     const bgColor = this.getBGColor(iconConfig);
 
-    return <View {... props} style={{
+    return <View {... this.props} style={{
             backgroundColor:'rgb('+bgColor.red+','+bgColor.green+','+bgColor.blue+')',
             borderRadius:Math.floor(this.props.size/10)
           }}>
