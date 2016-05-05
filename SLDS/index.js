@@ -10,4 +10,5 @@ module.exports = {
 //  IconAndr: require('./IconAndr'),
 //  SuperView: require('./SuperView')
   Icons: require('./Icons'),
+  Page: require('./Page')
 };
