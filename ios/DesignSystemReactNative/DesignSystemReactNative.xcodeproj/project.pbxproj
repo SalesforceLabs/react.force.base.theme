@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052544471CDBE4B30061D871 /* SLDSBaseIconView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0558CE191CC80F16007765C0 /* SLDSBaseIconView.h */; };
+		052544481CDBE4B30061D871 /* SLDSBaseIconManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0558CE1A1CC80F16007765C0 /* SLDSBaseIconManager.h */; };
 		0558CE1B1CC80F16007765C0 /* SLDSBaseIconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0558CE171CC80F16007765C0 /* SLDSBaseIconManager.m */; };
 		0558CE1C1CC80F16007765C0 /* SLDSBaseIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0558CE181CC80F16007765C0 /* SLDSBaseIconView.m */; };
 		0558CE1D1CC80F16007765C0 /* SLDSBaseIconView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0558CE191CC80F16007765C0 /* SLDSBaseIconView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -14,6 +16,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		052544461CDBE4880061D871 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				052544471CDBE4B30061D871 /* SLDSBaseIconView.h in CopyFiles */,
+				052544481CDBE4B30061D871 /* SLDSBaseIconManager.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		05E4E7671CBEC7D100899BCA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -94,6 +107,7 @@
 				05E4E6E91CBDF7BE00899BCA /* Frameworks */,
 				05E4E7671CBEC7D100899BCA /* CopyFiles */,
 				05E4E7591CBEBFA600899BCA /* Headers */,
+				052544461CDBE4880061D871 /* CopyFiles */,
 			);
 			buildRules = (
 			);
