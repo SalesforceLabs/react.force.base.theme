@@ -13,6 +13,9 @@
 		0558CE1C1CC80F16007765C0 /* SLDSBaseIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0558CE181CC80F16007765C0 /* SLDSBaseIconView.m */; };
 		0558CE1D1CC80F16007765C0 /* SLDSBaseIconView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0558CE191CC80F16007765C0 /* SLDSBaseIconView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0558CE1E1CC80F16007765C0 /* SLDSBaseIconManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0558CE1A1CC80F16007765C0 /* SLDSBaseIconManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0569802E1CDDCCC30014F09B /* DesignSystemReactNative.h in Headers */ = {isa = PBXBuildFile; fileRef = 0569802C1CDDCCC30014F09B /* DesignSystemReactNative.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0569802F1CDDCCC30014F09B /* DesignSystemReactNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 0569802D1CDDCCC30014F09B /* DesignSystemReactNative.m */; };
+		056980301CDDCCEC0014F09B /* DesignSystemReactNative.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0569802C1CDDCCC30014F09B /* DesignSystemReactNative.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,6 +25,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				056980301CDDCCEC0014F09B /* DesignSystemReactNative.h in CopyFiles */,
 				052544471CDBE4B30061D871 /* SLDSBaseIconView.h in CopyFiles */,
 				052544481CDBE4B30061D871 /* SLDSBaseIconManager.h in CopyFiles */,
 			);
@@ -43,6 +47,8 @@
 		0558CE181CC80F16007765C0 /* SLDSBaseIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDSBaseIconView.m; sourceTree = "<group>"; };
 		0558CE191CC80F16007765C0 /* SLDSBaseIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDSBaseIconView.h; sourceTree = "<group>"; };
 		0558CE1A1CC80F16007765C0 /* SLDSBaseIconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDSBaseIconManager.h; sourceTree = "<group>"; };
+		0569802C1CDDCCC30014F09B /* DesignSystemReactNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignSystemReactNative.h; sourceTree = "<group>"; };
+		0569802D1CDDCCC30014F09B /* DesignSystemReactNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignSystemReactNative.m; sourceTree = "<group>"; };
 		05E4E6EC1CBDF7BE00899BCA /* libDesignSystemReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDesignSystemReactNative.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +86,8 @@
 				0558CE181CC80F16007765C0 /* SLDSBaseIconView.m */,
 				0558CE191CC80F16007765C0 /* SLDSBaseIconView.h */,
 				0558CE1A1CC80F16007765C0 /* SLDSBaseIconManager.h */,
+				0569802C1CDDCCC30014F09B /* DesignSystemReactNative.h */,
+				0569802D1CDDCCC30014F09B /* DesignSystemReactNative.m */,
 			);
 			path = DesignSystemReactNative;
 			sourceTree = "<group>";
@@ -93,6 +101,7 @@
 			files = (
 				0558CE1E1CC80F16007765C0 /* SLDSBaseIconManager.h in Headers */,
 				0558CE1D1CC80F16007765C0 /* SLDSBaseIconView.h in Headers */,
+				0569802E1CDDCCC30014F09B /* DesignSystemReactNative.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +165,7 @@
 			files = (
 				0558CE1C1CC80F16007765C0 /* SLDSBaseIconView.m in Sources */,
 				0558CE1B1CC80F16007765C0 /* SLDSBaseIconManager.m in Sources */,
+				0569802F1CDDCCC30014F09B /* DesignSystemReactNative.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
