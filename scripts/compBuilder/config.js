@@ -1,5 +1,9 @@
 module.exports = [
   {
+    name: 'Buttons.Base.Neutral',
+    url: 'https://www.lightningdesignsystem.com/components/buttons/flavors/base/_button-neutral.html'
+  },
+  {
     name: 'Tiles.Base.TileWithIcon',
     url: 'https://www.lightningdesignsystem.com/components/tiles/flavors/base/_tile-with-icon.html'
   },
@@ -27,5 +31,6 @@ module.exports = [
     name: 'Buttons.Base.ButtonBrand',
     url: 'https://www.lightningdesignsystem.com/components/buttons/flavors/base/_button-brand.html'
   }
+
 
 ];

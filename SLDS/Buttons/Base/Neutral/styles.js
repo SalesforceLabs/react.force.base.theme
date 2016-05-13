@@ -1,0 +1,31 @@
+module.exports = { 
+  'View slds-button slds-button--neutral': 
+   { marginTop: 0,
+     marginBottom: 0,
+     marginLeft: 0,
+     marginRight: 0,
+     paddingTop: 0,
+     paddingBottom: 0,
+     paddingLeft: 16,
+     paddingRight: 16,
+     borderTopWidth: 1,
+     borderRightWidth: 1,
+     borderBottomWidth: 1,
+     borderLeftWidth: 1,
+     position: 'relative',
+     backgroundColor: '#fff',
+     borderTopColor: '#d8dde6',
+     borderRightColor: '#d8dde6',
+     borderBottomColor: '#d8dde6',
+     borderLeftColor: '#d8dde6',
+     borderRadius: 4,
+     overflow: 'visible' },
+  'Text slds-button slds-button--neutral': 
+   { fontFamily: 'inherit',
+     fontSize: NaN,
+     fontWeight: 'inherit',
+     fontStyle: 'inherit',
+     lineHeight: 34,
+     color: '#0070d2',
+     textAlign: 'center' }
+ };

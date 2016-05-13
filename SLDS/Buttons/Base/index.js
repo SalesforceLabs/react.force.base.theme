@@ -1,3 +1,4 @@
 module.exports = {
-  Brand: require('./Brand')
+  Brand: require('./Brand'),
+  Neutral: require('./Neutral')
 };
