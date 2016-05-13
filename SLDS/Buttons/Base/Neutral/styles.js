@@ -1,4 +1,4 @@
-module.exports = { 
+module.exports = {
   'View slds-button slds-button--neutral': 
    { marginTop: 0,
      marginBottom: 0,
@@ -20,12 +20,4 @@ module.exports = {
      borderLeftColor: '#d8dde6',
      borderRadius: 4,
      overflow: 'visible' },
-  'Text slds-button slds-button--neutral': 
-   { fontFamily: 'inherit',
-     fontSize: NaN,
-     fontWeight: 'inherit',
-     fontStyle: 'inherit',
-     lineHeight: 34,
-     color: '#0070d2',
-     textAlign: 'center' }
- };
+  'Text slds-button slds-button--neutral': { color: '#0070d2', textAlign: 'center' } };
