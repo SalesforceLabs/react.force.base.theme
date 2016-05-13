@@ -17,6 +17,8 @@ const VIEW_STYLE_PROPS = PROP_TYPES.Layout.concat(PROP_TYPES.View);
 const TEXT_STYLE_PROPS = PROP_TYPES.Text;
 
 const pick = require('lodash.pick');
+const filter = require('lodash.filter');
+const omitby = require('lodash.omitby');
 
 
 const getViewStyles = (styles)=>{
@@ -24,7 +26,13 @@ const getViewStyles = (styles)=>{
 };
 
 const getTextStyles = (styles)=>{
-  return pick(styles,TEXT_STYLE_PROPS);
+  return omitby(pick(styles,TEXT_STYLE_PROPS), (o)=>{
+    console.log('!!! O: ',o);
+    if(o !== o) return true; // crazy NaN check
+    if(o === 'inherit') return true;
+    if(o === 'undefined') return true;
+    return false;
+  });
 };
 
 const getStyleName = (tagName, className)=>{

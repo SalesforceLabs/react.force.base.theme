@@ -41,6 +41,8 @@
     "html-postcss": "^0.1.2"
   },
   "dependencies": {
+    "lodash.filter": "^4.4.0",
+    "lodash.omitby": "^4.4.0",
     "lodash.pick": "^4.2.0"
   }
 }

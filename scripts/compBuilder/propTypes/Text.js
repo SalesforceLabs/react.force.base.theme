@@ -3,7 +3,7 @@ module.exports =  [
   'fontSize',
   'fontWeight',
   'fontStyle',
-  'lineHeight',
+//  'lineHeight',
   'color',
   'containerBackgroundColor',
   'textAlign',
