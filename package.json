@@ -32,7 +32,7 @@
     "postcss-js": "^0.1.2",
     "postcss-remtopx": "^1.0.0",
     "postcss-shorthand-expand": "^1.0.1",
-    "react-native-css": "https://github.com/madpotato/react-native-css.git#master",
+    "react-native-css": "https://github.com/sabeurthabti/react-native-css.git#b56e97db72fd0ef79a848f9fd168a1e35a5c639b",
     "lodash.merge": "^4.3.2",
     "lodash.omit": "^4.1.0",
     "request": "^2.69.0",
