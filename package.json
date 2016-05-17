@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/madpotato/design-system-react-native#readme",
   "peerDependencies": {
-    "react-native": ">=0.21.0"
+    "react-native": ">=0.20.0"
   },
   "devDependencies": {
     "juice": "^1.10.0",
