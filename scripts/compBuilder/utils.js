@@ -44,8 +44,8 @@ const getStyleName = (tagName, className)=>{
 
 const processStyle = (el,output)=>{
   if(el && el.attribs){
-    const name = getStyleName(el.tagName, el.attribs['class']);
-    console.log('name: '+name);
+    const name = getStyleName(el.name, el.attribs['class']);
+    console.log('#######################');
     const value = el.attribs['style'];
     const long = cssLonghand(toCSS(name,value));
     const rnCSS = css.toJSS(long);
