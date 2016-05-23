@@ -1,5 +1,9 @@
 module.exports = [
   {
+    name: 'Menus.Action',
+    url: 'https://www.lightningdesignsystem.com/components/menus/flavors/action-overflow-for-touch/_default.html'
+  },
+  {
     name: 'Buttons.Base.Neutral',
     url: 'https://www.lightningdesignsystem.com/components/buttons/flavors/base/_button-neutral.html'
   },

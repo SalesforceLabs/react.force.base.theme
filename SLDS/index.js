@@ -4,6 +4,7 @@ module.exports = {
   PageHeader: require('./PageHeader'),
   InputReadonly: require('./InputReadonly'),
   Buttons: require('./Buttons'),
+  Menus: require('./Menus'),
   Text: require('./Text'),
 //  IconUtility: require('./IconUtility'),
 //  Iconn: require('./Iconn'),

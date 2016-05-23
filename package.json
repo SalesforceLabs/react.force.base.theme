@@ -5,6 +5,7 @@
   "main": "SLDS/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scripts/compBuilder/index.js",
     "build-comps": "node scripts/compBuilder/index.js"
   },
   "repository": {
