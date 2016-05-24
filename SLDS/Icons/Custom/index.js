@@ -29,14 +29,16 @@ module.exports = React.createClass({
       size: 50,
       iconCode: "\uEA03",
       iconColor: "white",
-      name:'like'
+      name:'like',
+      isRound:false
     };
   },
 
   propTypes: {
     size: React.PropTypes.number,
     iconName: React.PropTypes.string,
-    iconColor: React.PropTypes.string
+    iconColor: React.PropTypes.string,
+    isRound: React.PropTypes.bool
   },
 
   getBGColor (iconConfig) {
@@ -56,7 +58,7 @@ module.exports = React.createClass({
     const bgColor = this.getBGColor(iconConfig);
       return <View {... this.props} style={{
               backgroundColor:'rgb('+bgColor.red+','+bgColor.green+','+bgColor.blue+')',
-              borderRadius:Math.floor(this.props.size/10)
+              borderRadius:this.props.isRound?Math.floor(this.props.size/2):Math.floor(this.props.size/10)
             }}>
       <BaseIconNative 
         style={[{width:50,height:50},this.props.style]}
