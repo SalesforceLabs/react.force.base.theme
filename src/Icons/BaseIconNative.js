@@ -6,7 +6,7 @@ const {
   View
 } = React;
 
-const SLDSBaseIcon = requireNativeComponent('SLDSBaseIcon');
+const SalesforceBaseIcon = requireNativeComponent('SalesforceBaseIcon');
 
 module.exports = React.createClass({
   propTypes: {
@@ -15,7 +15,7 @@ module.exports = React.createClass({
     iconColor: PropTypes.string,
   },
   render() {
-    return <SLDSBaseIcon 
+    return <SalesforceBaseIcon 
               style={this.props.style}
               iconColor={this.props.iconColor}
               iconCode={this.props.iconCode}

@@ -1,6 +1,6 @@
-#import "SLDSBaseIconView.h"
+#import "SalesforceBaseIconView.h"
 
-@implementation SLDSBaseIconView  {
+@implementation SalesforceBaseIconView  {
     NSString *iconCode;
     UIColor *iconColor;
     NSString *fontName;

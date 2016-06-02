@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
 
-@interface DesignSystemReactNative : NSObject
+@interface SalesforceBaseTheme : NSObject
 +(void)activate;
 @end

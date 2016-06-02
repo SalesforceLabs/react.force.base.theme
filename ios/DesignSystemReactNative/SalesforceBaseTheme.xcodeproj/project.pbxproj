@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		052544471CDBE4B30061D871 /* SLDSBaseIconView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0558CE191CC80F16007765C0 /* SLDSBaseIconView.h */; };
-		052544481CDBE4B30061D871 /* SLDSBaseIconManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0558CE1A1CC80F16007765C0 /* SLDSBaseIconManager.h */; };
-		0558CE1B1CC80F16007765C0 /* SLDSBaseIconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0558CE171CC80F16007765C0 /* SLDSBaseIconManager.m */; };
-		0558CE1C1CC80F16007765C0 /* SLDSBaseIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0558CE181CC80F16007765C0 /* SLDSBaseIconView.m */; };
-		0558CE1D1CC80F16007765C0 /* SLDSBaseIconView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0558CE191CC80F16007765C0 /* SLDSBaseIconView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0558CE1E1CC80F16007765C0 /* SLDSBaseIconManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0558CE1A1CC80F16007765C0 /* SLDSBaseIconManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0569802E1CDDCCC30014F09B /* DesignSystemReactNative.h in Headers */ = {isa = PBXBuildFile; fileRef = 0569802C1CDDCCC30014F09B /* DesignSystemReactNative.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0569802F1CDDCCC30014F09B /* DesignSystemReactNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 0569802D1CDDCCC30014F09B /* DesignSystemReactNative.m */; };
-		056980301CDDCCEC0014F09B /* DesignSystemReactNative.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0569802C1CDDCCC30014F09B /* DesignSystemReactNative.h */; };
+		052544471CDBE4B30061D871 /* SalesforceBaseIconView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0558CE191CC80F16007765C0 /* SalesforceBaseIconView.h */; };
+		052544481CDBE4B30061D871 /* SalesforceBaseIconManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0558CE1A1CC80F16007765C0 /* SalesforceBaseIconManager.h */; };
+		0558CE1B1CC80F16007765C0 /* SalesforceBaseIconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0558CE171CC80F16007765C0 /* SalesforceBaseIconManager.m */; };
+		0558CE1C1CC80F16007765C0 /* SalesforceBaseIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0558CE181CC80F16007765C0 /* SalesforceBaseIconView.m */; };
+		0558CE1D1CC80F16007765C0 /* SalesforceBaseIconView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0558CE191CC80F16007765C0 /* SalesforceBaseIconView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0558CE1E1CC80F16007765C0 /* SalesforceBaseIconManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0558CE1A1CC80F16007765C0 /* SalesforceBaseIconManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0569802E1CDDCCC30014F09B /* SalesforceBaseTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 0569802C1CDDCCC30014F09B /* SalesforceBaseTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0569802F1CDDCCC30014F09B /* SalesforceBaseTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 0569802D1CDDCCC30014F09B /* SalesforceBaseTheme.m */; };
+		056980301CDDCCEC0014F09B /* SalesforceBaseTheme.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0569802C1CDDCCC30014F09B /* SalesforceBaseTheme.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,9 +25,9 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				056980301CDDCCEC0014F09B /* DesignSystemReactNative.h in CopyFiles */,
-				052544471CDBE4B30061D871 /* SLDSBaseIconView.h in CopyFiles */,
-				052544481CDBE4B30061D871 /* SLDSBaseIconManager.h in CopyFiles */,
+				056980301CDDCCEC0014F09B /* SalesforceBaseTheme.h in CopyFiles */,
+				052544471CDBE4B30061D871 /* SalesforceBaseIconView.h in CopyFiles */,
+				052544481CDBE4B30061D871 /* SalesforceBaseIconManager.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,13 +43,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0558CE171CC80F16007765C0 /* SLDSBaseIconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDSBaseIconManager.m; sourceTree = "<group>"; };
-		0558CE181CC80F16007765C0 /* SLDSBaseIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDSBaseIconView.m; sourceTree = "<group>"; };
-		0558CE191CC80F16007765C0 /* SLDSBaseIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDSBaseIconView.h; sourceTree = "<group>"; };
-		0558CE1A1CC80F16007765C0 /* SLDSBaseIconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDSBaseIconManager.h; sourceTree = "<group>"; };
-		0569802C1CDDCCC30014F09B /* DesignSystemReactNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignSystemReactNative.h; sourceTree = "<group>"; };
-		0569802D1CDDCCC30014F09B /* DesignSystemReactNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignSystemReactNative.m; sourceTree = "<group>"; };
-		05E4E6EC1CBDF7BE00899BCA /* libDesignSystemReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDesignSystemReactNative.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0558CE171CC80F16007765C0 /* SalesforceBaseIconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesforceBaseIconManager.m; sourceTree = "<group>"; };
+		0558CE181CC80F16007765C0 /* SalesforceBaseIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesforceBaseIconView.m; sourceTree = "<group>"; };
+		0558CE191CC80F16007765C0 /* SalesforceBaseIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesforceBaseIconView.h; sourceTree = "<group>"; };
+		0558CE1A1CC80F16007765C0 /* SalesforceBaseIconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesforceBaseIconManager.h; sourceTree = "<group>"; };
+		0569802C1CDDCCC30014F09B /* SalesforceBaseTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesforceBaseTheme.h; sourceTree = "<group>"; };
+		0569802D1CDDCCC30014F09B /* SalesforceBaseTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesforceBaseTheme.m; sourceTree = "<group>"; };
+		05E4E6EC1CBDF7BE00899BCA /* libSalesforceBaseTheme.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSalesforceBaseTheme.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 		05E4E6E31CBDF7BE00899BCA = {
 			isa = PBXGroup;
 			children = (
-				05E4E6EE1CBDF7BE00899BCA /* DesignSystemReactNative */,
+				05E4E6EE1CBDF7BE00899BCA /* SalesforceBaseTheme */,
 				05E4E6ED1CBDF7BE00899BCA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,22 +74,22 @@
 		05E4E6ED1CBDF7BE00899BCA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				05E4E6EC1CBDF7BE00899BCA /* libDesignSystemReactNative.a */,
+				05E4E6EC1CBDF7BE00899BCA /* libSalesforceBaseTheme.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		05E4E6EE1CBDF7BE00899BCA /* DesignSystemReactNative */ = {
+		05E4E6EE1CBDF7BE00899BCA /* SalesforceBaseTheme */ = {
 			isa = PBXGroup;
 			children = (
-				0558CE171CC80F16007765C0 /* SLDSBaseIconManager.m */,
-				0558CE181CC80F16007765C0 /* SLDSBaseIconView.m */,
-				0558CE191CC80F16007765C0 /* SLDSBaseIconView.h */,
-				0558CE1A1CC80F16007765C0 /* SLDSBaseIconManager.h */,
-				0569802C1CDDCCC30014F09B /* DesignSystemReactNative.h */,
-				0569802D1CDDCCC30014F09B /* DesignSystemReactNative.m */,
+				0558CE171CC80F16007765C0 /* SalesforceBaseIconManager.m */,
+				0558CE181CC80F16007765C0 /* SalesforceBaseIconView.m */,
+				0558CE191CC80F16007765C0 /* SalesforceBaseIconView.h */,
+				0558CE1A1CC80F16007765C0 /* SalesforceBaseIconManager.h */,
+				0569802C1CDDCCC30014F09B /* SalesforceBaseTheme.h */,
+				0569802D1CDDCCC30014F09B /* SalesforceBaseTheme.m */,
 			);
-			path = DesignSystemReactNative;
+			path = SalesforceBaseTheme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,18 +99,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0558CE1E1CC80F16007765C0 /* SLDSBaseIconManager.h in Headers */,
-				0558CE1D1CC80F16007765C0 /* SLDSBaseIconView.h in Headers */,
-				0569802E1CDDCCC30014F09B /* DesignSystemReactNative.h in Headers */,
+				0558CE1E1CC80F16007765C0 /* SalesforceBaseIconManager.h in Headers */,
+				0558CE1D1CC80F16007765C0 /* SalesforceBaseIconView.h in Headers */,
+				0569802E1CDDCCC30014F09B /* SalesforceBaseTheme.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		05E4E6EB1CBDF7BE00899BCA /* DesignSystemReactNative */ = {
+		05E4E6EB1CBDF7BE00899BCA /* SalesforceBaseTheme */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05E4E6F51CBDF7BE00899BCA /* Build configuration list for PBXNativeTarget "DesignSystemReactNative" */;
+			buildConfigurationList = 05E4E6F51CBDF7BE00899BCA /* Build configuration list for PBXNativeTarget "SalesforceBaseTheme" */;
 			buildPhases = (
 				05E4E6E81CBDF7BE00899BCA /* Sources */,
 				05E4E6E91CBDF7BE00899BCA /* Frameworks */,
@@ -122,9 +122,9 @@
 			);
 			dependencies = (
 			);
-			name = DesignSystemReactNative;
+			name = SalesforceBaseTheme;
 			productName = DesignSystemReactNative;
-			productReference = 05E4E6EC1CBDF7BE00899BCA /* libDesignSystemReactNative.a */;
+			productReference = 05E4E6EC1CBDF7BE00899BCA /* libSalesforceBaseTheme.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -141,7 +141,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 05E4E6E71CBDF7BE00899BCA /* Build configuration list for PBXProject "DesignSystemReactNative" */;
+			buildConfigurationList = 05E4E6E71CBDF7BE00899BCA /* Build configuration list for PBXProject "SalesforceBaseTheme" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -153,7 +153,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				05E4E6EB1CBDF7BE00899BCA /* DesignSystemReactNative */,
+				05E4E6EB1CBDF7BE00899BCA /* SalesforceBaseTheme */,
 			);
 		};
 /* End PBXProject section */
@@ -163,9 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0558CE1C1CC80F16007765C0 /* SLDSBaseIconView.m in Sources */,
-				0558CE1B1CC80F16007765C0 /* SLDSBaseIconManager.m in Sources */,
-				0569802F1CDDCCC30014F09B /* DesignSystemReactNative.m in Sources */,
+				0558CE1C1CC80F16007765C0 /* SalesforceBaseIconView.m in Sources */,
+				0558CE1B1CC80F16007765C0 /* SalesforceBaseIconManager.m in Sources */,
+				0569802F1CDDCCC30014F09B /* SalesforceBaseTheme.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SalesforceBaseTheme;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -275,7 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SalesforceBaseTheme;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -283,7 +283,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		05E4E6E71CBDF7BE00899BCA /* Build configuration list for PBXProject "DesignSystemReactNative" */ = {
+		05E4E6E71CBDF7BE00899BCA /* Build configuration list for PBXProject "SalesforceBaseTheme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05E4E6F31CBDF7BE00899BCA /* Debug */,
@@ -292,7 +292,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05E4E6F51CBDF7BE00899BCA /* Build configuration list for PBXNativeTarget "DesignSystemReactNative" */ = {
+		05E4E6F51CBDF7BE00899BCA /* Build configuration list for PBXNativeTarget "SalesforceBaseTheme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05E4E6F61CBDF7BE00899BCA /* Debug */,

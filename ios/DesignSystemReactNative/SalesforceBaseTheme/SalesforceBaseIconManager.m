@@ -1,22 +1,22 @@
 #import "RCTConvert.h"
 #import "RCTBridge.h"
-#import "SLDSBaseIconManager.h"
-#import "SLDSBaseIconView.h"
+#import "SalesforceBaseIconManager.h"
+#import "SalesforceBaseIconView.h"
 
 
-@implementation RCTConvert (SLDSBaseIconView)
+@implementation RCTConvert (SalesforceBaseIconView)
 
 
 @end
 
-@implementation SLDSBaseIconManager
+@implementation SalesforceBaseIconView
 
 RCT_EXPORT_MODULE();
 
 
 - (UIView *)view
 {
-    return [[SLDSBaseIconView alloc] init];
+    return [[SalesforceBaseIconView alloc] init];
 }
 
 - (dispatch_queue_t)methodQueue

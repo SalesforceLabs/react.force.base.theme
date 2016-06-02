@@ -2,7 +2,7 @@
 #import "RCTView.h"
 
 
-@interface SLDSBaseIconView : UIView
+@interface SalesforceBaseIconView : UIView
 
 
 @end
