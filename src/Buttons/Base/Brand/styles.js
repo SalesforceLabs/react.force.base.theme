@@ -22,7 +22,6 @@ module.exports = {
      overflow: 'visible' },
   'Text slds-button slds-button--brand':
    { 
-//     lineHeight: 34,
      color: '#fff',
      textAlign: 'center' 
    } };

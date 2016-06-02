@@ -1,45 +1,28 @@
 {
-  "name": "design-system-react-native",
+  "name": "react.force.base.theme",
   "version": "0.1.8",
   "description": "",
-  "main": "SLDS/index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node scripts/compBuilder/index.js",
-    "build-comps": "node scripts/compBuilder/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/madpotato/design-system-react-native.git"
+    "url": "git+https://github.com/ForceDotComLabs/react.force.base.theme.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/madpotato/design-system-react-native/issues"
+    "url": "https://github.com/ForceDotComLabs/react.force.base.theme/issues"
   },
   "rnpm": {
     "assets": [
       "Fonts"
     ]
   },
-  "homepage": "https://github.com/madpotato/design-system-react-native#readme",
+  "homepage": "https://github.com/ForceDotComLabs/react.force.base.theme#readme",
   "peerDependencies": {
     "react-native": ">=0.20.0"
-  },
-  "devDependencies": {
-    "juice": "^1.10.0",
-    "juice2": "^1.3.1",
-    "postcss": "^5.0.19",
-    "postcss-js": "^0.1.2",
-    "postcss-remtopx": "^1.0.0",
-    "postcss-shorthand-expand": "^1.0.1",
-    "react-native-css": "https://github.com/sabeurthabti/react-native-css.git#b56e97db72fd0ef79a848f9fd168a1e35a5c639b",
-    "lodash.merge": "^4.3.2",
-    "lodash.omit": "^4.1.0",
-    "request": "^2.69.0",
-    "css-longhand": "^1.1.1",
-    "web-resource-inliner": "^1.2.1",
-    "html-postcss": "^0.1.2"
   },
   "dependencies": {
     "lodash.filter": "^4.4.0",

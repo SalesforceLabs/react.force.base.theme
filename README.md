@@ -1,6 +1,6 @@
-# design-system-react-native
+# react.force.base.theme
 
-React Native components (iOS/Android) for [Salesforce Lightning Design System](https://www.lightningdesignsystem.com/). 
+React Native components (iOS/Android) for [Salesforce Basic UI Theme](https://www.lightningdesignsystem.com/). 
 
 Works is progress
 
@@ -35,13 +35,13 @@ Works is progress
 Import statement:
 
 ```jsx
-import SLDS from 'design-system-react-native';
+import Theme from 'react.force.base.theme';
 ```
 
-[Button Brand](https://www.lightningdesignsystem.com/components/buttons/) JSX code:
+Button Brand JSX code:
 
 ```jsx
-<SLDS.Buttons.Base.Brand 
+<Theme.Buttons.Base.Brand 
   label="Button Brand" 
   onPress={()=>{
     alert('Clicked!')
@@ -53,7 +53,7 @@ Result:
 ![Branded Button](/README_files/button-small.png?raw=true)
 
 
-[Utility Icon](https://www.lightningdesignsystem.com/components/icons/) JSX code:
+Utility Icon JSX code:
 
 ```jsx
 <SLDS.Icons.Utility name="like" />
@@ -63,6 +63,3 @@ Result:
 ![Utility Icon](/README_files/icon-small.png?raw=true)
 
 for more code samples and component usage please see:
-
-## Demo
-iOS/Android [Sample project repo](https://github.com/madpotato/ComponentsApp)
