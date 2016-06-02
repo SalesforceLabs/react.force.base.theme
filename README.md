@@ -12,7 +12,7 @@ Works is progress
 
   ```
 
-  npm install git+ssh://git@github.com:ForceDotComLabs/design-system-react-native.git --save
+  npm install git+ssh://git@github.com:ForceDotComLabs/react.force.base.theme.git --save
 
   ```
 2. if [RNPM](http://facebook.github.io/react-native/releases/0.24/docs/linking-libraries-ios.html#automatic-linking) is not yet installed:
@@ -56,7 +56,7 @@ Result:
 Utility Icon JSX code:
 
 ```jsx
-<SLDS.Icons.Utility name="like" />
+<Theme.Icons.Utility name="like" />
 ```
 Result:
 
