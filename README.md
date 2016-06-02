@@ -1,6 +1,6 @@
 # react.force.base.theme
 
-React Native components (iOS/Android) for [Salesforce Basic UI Theme](https://www.lightningdesignsystem.com/). 
+React Native components (iOS/Android) for Salesforce Basic UI Theme. 
 
 Works is progress
 
