@@ -9,7 +9,7 @@
 
 @end
 
-@implementation SalesforceBaseIconView
+@implementation SalesforceBaseIconManager
 
 RCT_EXPORT_MODULE();
 
