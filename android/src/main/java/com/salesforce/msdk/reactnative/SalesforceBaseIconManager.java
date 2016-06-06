@@ -23,9 +23,52 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
-#import <Foundation/Foundation.h>
+package com.salesforce.msdk.reactnative;
 
-@interface SalesforceBaseTheme : NSObject
-+(void)activate;
-@end
+import android.view.View;
+
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.uimanager.SimpleViewManager;
+import com.facebook.react.uimanager.ThemedReactContext;
+import com.facebook.react.uimanager.annotations.ReactProp;
+
+import javax.annotation.Nullable;
+
+public class SalesforceBaseIconManager extends SimpleViewManager<View>
+{
+    public SalesforceBaseIconManager(ReactApplicationContext reactContext) {
+
+    }
+
+    @Override
+    public String getName()
+    {
+        return "SalesforceBaseIcon";
+    }
+
+    @ReactProp(name = "iconScale", defaultFloat = 1f)
+    public void setIconScale(SalesforceBaseIconView view, float iconScale) {
+        view.setIconScale(iconScale);
+    }
+
+    @ReactProp(name = "iconCode")
+    public void setIconCode(SalesforceBaseIconView view, @Nullable String iconCode) {
+        view.setIconCode(iconCode);
+    }
+
+    @ReactProp(name = "iconColor")
+    public void setIconColor(SalesforceBaseIconView view, @Nullable String iconColor) {
+        view.setIconColor(iconColor);
+    }
+
+    @ReactProp(name = "fontName")
+    public void setFontName(SalesforceBaseIconView view, @Nullable String fontName) {
+        view.setFontName(fontName);
+    }
+
+    @Override
+    public View createViewInstance(ThemedReactContext context)
+    {
+        return new SalesforceBaseIconView(context.getBaseContext());
+    }
+}

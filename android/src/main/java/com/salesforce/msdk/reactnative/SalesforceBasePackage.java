@@ -23,9 +23,39 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
-#import <Foundation/Foundation.h>
+package com.salesforce.masdk.reactnative;
 
-@interface SalesforceBaseTheme : NSObject
-+(void)activate;
-@end
+import com.facebook.react.ReactPackage;
+import com.facebook.react.bridge.JavaScriptModule;
+import com.facebook.react.bridge.NativeModule;
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.uimanager.ViewManager;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class SalesforceBasePackage implements ReactPackage {
+
+    public SalesforceBasePackage() {}
+
+    @Override
+    public List<NativeModule> createNativeModules(
+            ReactApplicationContext reactContext) {
+        List<NativeModule> modules = new ArrayList<>();
+        return modules;
+    }
+
+    @Override
+    public List<Class<? extends JavaScriptModule>> createJSModules() {
+        return Collections.emptyList();
+    }
+
+    @Override
+    public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
+        return Arrays.<ViewManager>asList(
+                new SalesforceBaseIconManager(reactContext)
+        );
+    }
+}
