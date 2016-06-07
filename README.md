@@ -2,9 +2,6 @@
 
 React Native components (iOS/Android) for Salesforce Basic UI Theme. 
 
-Works is progress
-
-![iOS Screenshot](/README_files/ios-screen-small.png?raw=true)
 
 ## Setup
 
