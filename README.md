@@ -2,6 +2,10 @@
 
 React Native components (iOS/Android) for Salesforce Basic UI Theme. 
 
+### Attention: This is an experimental project published under ForceDotComLabs: 
+
+1. work in progress
+2. we need you feedback
 
 ## Setup
 
