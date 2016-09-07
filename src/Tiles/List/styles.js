@@ -24,7 +24,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
  
-module.exports = { 'View slds-list--vertical slds-has-dividers--bottom-space slds-has-list-interactions':
+import React, {PixelRatio} from 'react-native';
+
+
+module.exports = React.StyleSheet.create({ 'View slds-list--vertical slds-has-dividers--bottom-space slds-has-list-interactions':
    { marginTop: 0,
      marginBottom: 0,
      marginLeft: 0,
@@ -63,9 +66,9 @@ module.exports = { 'View slds-list--vertical slds-has-dividers--bottom-space sld
      paddingRight: 0,
      position: 'relative',
      overflow: 'hidden' },
-  'Text slds-tile__title slds-truncate': {},
+  'Text slds-tile__title slds-truncate': {fontSize: 14},
   'View a': { backgroundColor: 'transparent' },
-  'Text a': { color: '#0070d2' },
+  'Text a': { color: '#0070d2', fontSize: 16 },
   'View slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small':
    { marginTop: 0,
      marginBottom: 0,
@@ -76,11 +79,11 @@ module.exports = { 'View slds-list--vertical slds-has-dividers--bottom-space sld
      paddingLeft: 0,
      paddingRight: 0,
      position: 'relative' },
-  'Text slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small': { fontSize: 12, color: '#54698d' },
+  'Text slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small': { fontSize: 14, color: '#54698d' },
   'View slds-truncate slds-list__item':
    { marginRight: 0,
      paddingRight: 0,
      position: 'relative',
      alignSelf: 'center',
      overflow: 'hidden' },
-  'Text slds-truncate slds-list__item': {} };
+  'Text slds-truncate slds-list__item': {} });

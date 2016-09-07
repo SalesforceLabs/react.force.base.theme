@@ -44,7 +44,7 @@ module.exports = React.createClass({
   getDefaultProps (){
     return {
       style: {}
-    }
+    };
   },
   render () {
     return (

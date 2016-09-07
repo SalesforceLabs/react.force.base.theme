@@ -24,7 +24,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
  
-module.exports = {
+import React, {PixelRatio} from 'react-native';
+
+
+module.exports = React.StyleSheet.create({
   'View slds-list__item': 
    { paddingTop: 0,
      paddingBottom: 0,
@@ -39,7 +42,7 @@ module.exports = {
      paddingLeft: 12,
      paddingRight: 12,
      backgroundColor: 'transparent' },
-  'Text a': { color: '#0070d2' },
+  'Text a': { color: '#0070d2', fontSize:16},
   'View slds-truncate': 
    { marginTop: 0,
      marginBottom: 0,
@@ -66,4 +69,4 @@ module.exports = {
   'Text use': {},
   'View span': {},
   'Text span': {},
-};
+});
