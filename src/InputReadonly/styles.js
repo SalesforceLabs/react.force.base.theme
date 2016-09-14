@@ -30,9 +30,9 @@ import React, {PixelRatio} from 'react-native';
 module.exports = React.StyleSheet.create({ 
   'View slds-form-element': { position: 'relative' },
   'Text slds-form-element': {},
-  'View slds-form-element__label': { marginBottom: 4, marginRight: 12 },
+  'View slds-form-element__label': { marginBottom: 8, marginRight: 12 },
   'Text slds-form-element__label': { fontSize: 14, color: '#54698d' },
   'View slds-form-element__control slds-has-divider--bottom': { borderBottomWidth: 1, borderBottomColor: '#d8dde6' },
   'Text slds-form-element__control slds-has-divider--bottom': {},
   'View slds-form-element__static': {  },
-  'Text slds-form-element__static': { fontSize: 16, lineHeight: 34 } });
+  'Text slds-form-element__static': { fontSize: 16, paddingTop:4, lineHeight: 26 } });
