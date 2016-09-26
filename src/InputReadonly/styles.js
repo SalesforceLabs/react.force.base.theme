@@ -24,10 +24,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
  
-import React, {PixelRatio} from 'react-native';
+import { PixelRatio, StyleSheet } from 'react-native';
 
 
-module.exports = React.StyleSheet.create({ 
+module.exports = StyleSheet.create({ 
   'View slds-form-element': { position: 'relative' },
   'Text slds-form-element': {},
   'View slds-form-element__label': { marginBottom: 8, marginRight: 12 },

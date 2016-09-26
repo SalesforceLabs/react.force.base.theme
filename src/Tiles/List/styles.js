@@ -24,10 +24,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
  
-import React, {PixelRatio} from 'react-native';
+import { StyleSheet, PixelRatio } from 'react-native';
 
 
-module.exports = React.StyleSheet.create({ 'View slds-list--vertical slds-has-dividers--bottom-space slds-has-list-interactions':
+module.exports = StyleSheet.create({ 'View slds-list--vertical slds-has-dividers--bottom-space slds-has-list-interactions':
    { marginTop: 0,
      marginBottom: 0,
      marginLeft: 0,

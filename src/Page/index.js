@@ -26,8 +26,8 @@
  
 'use strict';
 
-const React = require('react-native');
-const View = React.View;
+import React from 'react';
+import { View } from 'react-native';
 
 const styles = {
   container:{

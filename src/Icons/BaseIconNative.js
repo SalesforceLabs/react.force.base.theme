@@ -24,22 +24,18 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
  
-const React = require('react-native');
-const { 
+import React from 'react';
+
+import { 
   requireNativeComponent, 
   PropTypes, 
   NativeModules, 
   View
-} = React;
+} from 'react-native';
 
 const SalesforceBaseIcon = requireNativeComponent('SalesforceBaseIcon');
 
 module.exports = React.createClass({
-  propTypes: {
-    iconScale: PropTypes.number,
-    iconCode: PropTypes.string,
-    iconColor: PropTypes.string,
-  },
   render() {
     return <SalesforceBaseIcon 
               style={this.props.style}

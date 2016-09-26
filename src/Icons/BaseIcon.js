@@ -24,14 +24,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
  
-const React = require('react-native');
+import React from 'react';
 
-const {
+import {
   StyleSheet,
   Text,
   View,
   PixelRatio
-} = React;
+} from 'react-native';
 
 module.exports = React.createClass({
 

@@ -24,13 +24,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
  
-const React = require('react-native');
+import React from 'react';
 
-const {
+import {
   StyleSheet,
   Text,
   View
-} = React;
+} from 'react-native';
 
 const pick = require('lodash.pick');
 

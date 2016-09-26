@@ -26,10 +26,10 @@
  
 'use strict';
 
-const React = require('react-native');
+import React from 'react';
 const styles = require('./styles');
 const Text = require('../../Text');
-const View = React.View;
+import { View } from 'react-native';
 const Icons = require('../../Icons');
 
 module.exports = React.createClass({

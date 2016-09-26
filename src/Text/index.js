@@ -26,12 +26,12 @@
  
 'use strict';
 
-const React = require('react-native');
+import React from 'react';
 
-const {
+import {
   StyleSheet,
-  Text,
-} = React;
+  Text
+} from 'react-native';
 
 
 const getDefaultStyle = () => {
