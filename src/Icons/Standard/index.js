@@ -23,7 +23,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
+
 import React from 'react';
 
 import {
@@ -89,8 +89,8 @@ module.exports = React.createClass({
             backgroundColor:'rgb('+bgColor.red+','+bgColor.green+','+bgColor.blue+')',
             borderRadius:this.props.isRound?Math.floor(this.props.size/2):Math.floor(this.props.size/10)
           }}>
-      <BaseIconNative 
-        style={[{width:50,height:50},pick(this.props.style,['width','height'])]}
+      <BaseIconNative
+        style={[{width:50,height:50},this.props.style]}
         iconCode={iconConfig.code}
         iconColor='#ffffff'
         iconScale={ICON_SCALE}

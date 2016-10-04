@@ -23,11 +23,11 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
+
 import { PixelRatio, StyleSheet } from 'react-native';
 
 
-module.exports = StyleSheet.create({ 
+module.exports = StyleSheet.create({
   'View slds-form-element': { position: 'relative' },
   'Text slds-form-element': {},
   'View slds-form-element__label': { marginBottom: 8, marginRight: 12 },
@@ -35,4 +35,4 @@ module.exports = StyleSheet.create({
   'View slds-form-element__control slds-has-divider--bottom': { borderBottomWidth: 1, borderBottomColor: '#d8dde6' },
   'Text slds-form-element__control slds-has-divider--bottom': {},
   'View slds-form-element__static': {  },
-  'Text slds-form-element__static': { fontSize: 16, paddingTop:4, lineHeight: 26 } });
+  'Text slds-form-element__static': { fontSize: 16, paddingTop:6, lineHeight: 26 } });

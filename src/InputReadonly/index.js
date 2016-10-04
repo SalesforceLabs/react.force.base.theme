@@ -23,7 +23,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
+
 'use strict';
 
 import React from 'react';
@@ -45,8 +45,8 @@ module.exports = React.createClass({
   },
   render: function() {
     return (
-      <View ref={component => this._root = component} {...this.props} 
-        style={[styles['View slds-form-element'],{marginRight:12,marginLeft:12,marginTop:6,marginBottom:6}]}>
+      <View ref={component => this._root = component} {...this.props}
+        style={[styles['View slds-form-element'],{marginRight:12,marginLeft:12,marginTop:6,marginBottom:6},this.props.style]}>
         <Text
           style={styles['Text slds-form-element__label']}
           numberOfLines={1}
@@ -62,7 +62,7 @@ module.exports = React.createClass({
             {this.props.value}
           </Text>:null}
           {this.props.children}
-        </View>              
+        </View>
       </View>
     );
   }

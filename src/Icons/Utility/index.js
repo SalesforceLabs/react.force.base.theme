@@ -23,7 +23,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
+
 import React from 'react';
 
 import {
@@ -73,7 +73,7 @@ module.exports = React.createClass({
       return <View {... this.props} style={{
                 backgroundColor:'transparent',
                 borderRadius:Math.floor(this.props.size/10)
-              }}><BaseIconNative 
+              }}><BaseIconNative
                   style={[{width:50,height:50},this.props.style]}
                   iconCode={getCodeByName(this.props.name)}
                   iconColor={this.props.iconColor}
