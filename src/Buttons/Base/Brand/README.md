@@ -18,4 +18,4 @@ Button Brand JSX code:
 
 Result:
 
-![Branded Button](../../../README_files/button-small.png?raw=true)
+![Branded Button](/README_files/button-small.png?raw=true)
