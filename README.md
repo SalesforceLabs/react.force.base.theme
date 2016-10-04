@@ -7,6 +7,27 @@ React Native components (iOS/Android) for Salesforce Basic UI Theme.
 1. work in progress
 2. we need your feedback
 
+## Component List:
+1. Badge
+2. Buttons
+  1. Base
+    1. Brand
+    2. Neutral
+3. Icons
+  1. Action
+  2. Custom
+  3. Standard
+  4. Utility
+4. InputReadonly
+5. Menus
+  1. ActionListItem
+6. Page
+7. PageHeader
+8. Text
+9. Tiles
+  1. Base
+  2. List
+
 ## Setup
 
 1. add to an existing React Native project:
