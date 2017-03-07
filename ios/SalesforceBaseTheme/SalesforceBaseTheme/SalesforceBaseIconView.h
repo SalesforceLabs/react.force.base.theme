@@ -24,8 +24,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+#if __has_include(<React/RCTAssert.h>)
+#import <React/RCTEventDispatcher.h>
+#import <React/RCTView.h>
+#else
 #import "RCTEventDispatcher.h"
 #import "RCTView.h"
+#endif
 
 
 @interface SalesforceBaseIconView : UIView

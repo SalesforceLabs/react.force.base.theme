@@ -23,9 +23,14 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
+
+#if __has_include(<React/RCTAssert.h>)
+#import <React/RCTConvert.h>
+#import <React/RCTBridge.h>
+#else
 #import "RCTConvert.h"
 #import "RCTBridge.h"
+#endif
 #import "SalesforceBaseIconManager.h"
 #import "SalesforceBaseIconView.h"
 
