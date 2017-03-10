@@ -34,21 +34,14 @@ React Native components (iOS/Android) for Salesforce Basic UI Theme.
 
   ```
 
-  npm install https://github.com/ForceDotComLabs/react.force.base.theme.git --save
+  npm install https://github.com/forcedotcomlabs/react.force.base.theme.git --save
 
   ```
-2. if [RNPM](http://facebook.github.io/react-native/releases/0.24/docs/linking-libraries-ios.html#automatic-linking) is not yet installed:
-
-  ```
-
-  npm install rnpm -g
-
-  ```
-3. link the library: 
+2. link the library: 
 
   ```
 
-  rnpm link
+  react-native link
 
   ```
   

@@ -23,8 +23,12 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
+
+#if __has_include(<React/RCTAssert.h>)
+#import <React/RCTViewManager.h>
+#else
 #import "RCTViewManager.h"
+#endif
 
 
 @interface SalesforceBaseIconManager : RCTViewManager
